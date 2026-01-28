@@ -1,0 +1,3414 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\Devansh\Downloads\Personal_Learning_project\build\Personal_Learning_project.elf C:\Users\Devansh\Downloads\Personal_Learning_project\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM8'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (231) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (248) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (331) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (353) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (371) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1285) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1293) cpu_start: Pro cpu start user code[0m
+[0;32mI (1293) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1294) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1299) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1312) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1324) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1351) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1370) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1578) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1748) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1748) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1748) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1838) SYSTEM: Distance: ERROR[0m
+[0;32mI (1838) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1838) main_task: Returned from app_main()[0m
+[0;32mI (2118) SYSTEM: Distance: ERROR[0m
+[0;32mI (2398) SYSTEM: Distance: ERROR[0m
+[0;32mI (2678) SYSTEM: Distance: ERROR[0m
+[0;32mI (2958) SYSTEM: Distance: ERROR[0m
+[0;32mI (3078) SYSTEM: PERSON DETECTED (score=93)[0m
+[0;32mI (3238) SYSTEM: Distance: ERROR[0m
+[0;32mI (3518) SYSTEM: Distance: ERROR[0m
+[0;32mI (3798) SYSTEM: Distance: ERROR[0m
+[0;32mI (4718) SYSTEM: No person (score=36)[0m
+[0;32mI (4748) SYSTEM: Distance: ERROR[0m
+[0;32mI (5028) SYSTEM: Distance: ERROR[0m
+[0;32mI (5308) SYSTEM: Distance: ERROR[0m
+[0;32mI (6358) SYSTEM: No person (score=53)[0m
+[0;32mI (6388) SYSTEM: Distance: ERROR[0m
+[0;32mI (6668) SYSTEM: Distance: ERROR[0m
+[0;32mI (6948) SYSTEM: Distance: ERROR[0m
+[0;32mI (7998) SYSTEM: PERSON DETECTED (score=112)[0m
+[0;32mI (8028) SYSTEM: Distance: ERROR[0m
+[0;32mI (8308) SYSTEM: Distance: ERROR[0m
+[0;32mI (8588) SYSTEM: Distance: ERROR[0m
+[0;32mI (9638) SYSTEM: PERSON DETECTED (score=112)[0m
+[0;32mI (9668) SYSTEM: Distance: ERROR[0m
+[0;32mI (9948) SYSTEM: Distance: ERROR[0m
+[0;32mI (10228) SYSTEM: Distance: ERROR[0m
+[0;32mI (11278) SYSTEM: PERSON DETECTED (score=110)[0m
+[0;32mI (11308) SYSTEM: Distance: ERROR[0m
+[0;32mI (11588) SYSTEM: Distance: ERROR[0m
+[0;32mI (11868) SYSTEM: Distance: ERROR[0m
+[0;32mI (12918) SYSTEM: No person (score=-21)[0m
+[0;32mI (12948) SYSTEM: Distance: ERROR[0m
+[0;32mI (13228) SYSTEM: Distance: ERROR[0m
+[0;32mI (13508) SYSTEM: Distance: ERROR[0m
+[0;32mI (14558) SYSTEM: No person (score=-59)[0m
+[0;32mI (14588) SYSTEM: Distance: ERROR[0m
+[0;32mI (14868) SYSTEM: Distance: ERROR[0m
+[0;32mI (15148) SYSTEM: Distance: ERROR[0m
+[0;32mI (16198) SYSTEM: No person (score=-58)[0m
+[0;32mI (16228) SYSTEM: Distance: ERROR[0m
+[0;32mI (16508) SYSTEM: Distance: ERROR[0m
+[0;32mI (16788) SYSTEM: Distance: ERROR[0m
+[0;32mI (17718) SYSTEM: Distance: ERROR[0m
+[0;32mI (17828) SYSTEM: No person (score=-66)[0m
+[0;32mI (17998) SYSTEM: Distance: ERROR[0m
+[0;32mI (18278) SYSTEM: Distance: ERROR[0m
+[0;32mI (18558) SYSTEM: Distance: ERROR[0m
+[0;32mI (19468) SYSTEM: No person (score=-61)[0m
+[0;32mI (19498) SYSTEM: Distance: ERROR[0m
+[0;32mI (19778) SYSTEM: Distance: ERROR[0m
+[0;32mI (20058) SYSTEM: Distance: ERROR[0m
+[0;32mI (21108) SYSTEM: No person (score=-61)[0m
+[0;32mI (21138) SYSTEM: Distance: ERROR[0m
+[0;32mI (21418) SYSTEM: Distance: ERROR[0m
+[0;32mI (21698) SYSTEM: Distance: ERROR[0m
+[0;32mI (22748) SYSTEM: No person (score=-55)[0m
+[0;32mI (22778) SYSTEM: Distance: ERROR[0m
+[0;32mI (23058) SYSTEM: Distance: ERROR[0m
+[0;32mI (23338) SYSTEM: Distance: ERROR[0m
+[0;32mI (24388) SYSTEM: No person (score=25)[0m
+[0;32mI (24418) SYSTEM: Distance: ERROR[0m
+[0;32mI (24698) SYSTEM: Distance: ERROR[0m
+[0;32mI (24978) SYSTEM: Distance: ERROR[0m
+[0;32mI (26028) SYSTEM: No person (score=28)[0m
+[0;32mI (26058) SYSTEM: Distance: ERROR[0m
+[0;32mI (26338) SYSTEM: Distance: ERROR[0m
+[0;32mI (26618) SYSTEM: Distance: ERROR[0m
+[0;32mI (27668) SYSTEM: No person (score=8)[0m
+[0;32mI (27698) SYSTEM: Distance: ERROR[0m
+[0;32mI (27978) SYSTEM: Distance: ERROR[0m
+[0;32mI (28258) SYSTEM: Distance: ERROR[0m
+[0;32mI (29308) SYSTEM: No person (score=5)[0m
+[0;32mI (29338) SYSTEM: Distance: ERROR[0m
+[0;32mI (29618) SYSTEM: Distance: ERROR[0m
+[0;32mI (29898) SYSTEM: Distance: ERROR[0m
+[0;32mI (30948) SYSTEM: No person (score=1)[0m
+[0;32mI (30978) SYSTEM: Distance: ERROR[0m
+[0;32mI (31258) SYSTEM: Distance: ERROR[0m
+[0;32mI (31538) SYSTEM: Distance: ERROR[0m
+[0;32mI (32588) SYSTEM: No person (score=-42)[0m
+[0;32mI (32618) SYSTEM: Distance: ERROR[0m
+[0;32mI (32898) SYSTEM: Distance: ERROR[0m
+[0;32mI (33178) SYSTEM: Distance: ERROR[0m
+[0;32mI (34228) SYSTEM: No person (score=-7)[0m
+[0;32mI (34258) SYSTEM: Distance: ERROR[0m
+[0;32mI (34538) SYSTEM: Distance: ERROR[0m
+[0;32mI (34818) SYSTEM: Distance: ERROR[0m
+[0;32mI (35868) SYSTEM: No person (score=-59)[0m
+[0;32mI (35898) SYSTEM: Distance: ERROR[0m
+[0;32mI (36178) SYSTEM: Distance: ERROR[0m
+[0;32mI (36458) SYSTEM: Distance: ERROR[0m
+[0;32mI (37508) SYSTEM: No person (score=51)[0m
+[0;32mI (37538) SYSTEM: Distance: ERROR[0m
+[0;32mI (37818) SYSTEM: Distance: ERROR[0m
+[0;32mI (38098) SYSTEM: Distance: ERROR[0m
+[0;32mI (39148) SYSTEM: No person (score=33)[0m
+[0;32mI (39178) SYSTEM: Distance: ERROR[0m
+[0;32mI (39458) SYSTEM: Distance: ERROR[0m
+[0;32mI (39738) SYSTEM: Distance: ERROR[0m
+[0;32mI (40788) SYSTEM: No person (score=20)[0m
+[0;32mI (40818) SYSTEM: Distance: ERROR[0m
+[0;32mI (41098) SYSTEM: Distance: ERROR[0m
+[0;32mI (41378) SYSTEM: Distance: ERROR[0m
+[0;32mI (42428) SYSTEM: No person (score=36)[0m
+[0;32mI (42458) SYSTEM: Distance: ERROR[0m
+[0;32mI (42738) SYSTEM: Distance: ERROR[0m
+[0;32mI (43018) SYSTEM: Distance: ERROR[0m
+[0;32mI (44068) SYSTEM: No person (score=-31)[0m
+[0;32mI (44098) SYSTEM: Distance: ERROR[0m
+[0;32mI (44378) SYSTEM: Distance: ERROR[0m
+[0;32mI (44658) SYSTEM: Distance: ERROR[0m
+[0;32mI (45708) SYSTEM: No person (score=-34)[0m
+[0;32mI (45738) SYSTEM: Distance: ERROR[0m
+[0;32mI (46018) SYSTEM: Distance: ERROR[0m
+[0;32mI (46298) SYSTEM: Distance: ERROR[0m
+[0;32mI (47348) SYSTEM: No person (score=-67)[0m
+[0;32mI (47378) SYSTEM: Distance: ERROR[0m
+[0;32mI (47658) SYSTEM: Distance: ERROR[0m
+[0;32mI (47938) SYSTEM: Distance: ERROR[0m
+[0;32mI (48988) SYSTEM: No person (score=-54)[0m
+[0;32mI (49018) SYSTEM: Distance: ERROR[0m
+[0;32mI (49298) SYSTEM: Distance: ERROR[0m
+[0;32mI (49578) SYSTEM: Distance: ERROR[0m
+[0;32mI (50628) SYSTEM: No person (score=-75)[0m
+[0;32mI (50658) SYSTEM: Distance: ERROR[0m
+[0;32mI (50938) SYSTEM: Distance: ERROR[0m
+[0;32mI (51218) SYSTEM: Distance: ERROR[0m
+[0;32mI (52268) SYSTEM: No person (score=-100)[0m
+[0;32mI (52298) SYSTEM: Distance: ERROR[0m
+[0;32mI (52578) SYSTEM: Distance: ERROR[0m
+[0;32mI (52858) SYSTEM: Distance: ERROR[0m
+[0;32mI (53908) SYSTEM: No person (score=-40)[0m
+[0;32mI (53938) SYSTEM: Distance: ERROR[0m
+[0;32mI (54218) SYSTEM: Distance: ERROR[0m
+[0;32mI (54498) SYSTEM: Distance: ERROR[0m
+[0;32mI (55548) SYSTEM: No person (score=2)[0m
+[0;32mI (55578) SYSTEM: Distance: ERROR[0m
+[0;32mI (55858) SYSTEM: Distance: ERROR[0m
+[0;32mI (56138) SYSTEM: Distance: ERROR[0m
+[0;32mI (57188) SYSTEM: No person (score=-32)[0m
+[0;32mI (57218) SYSTEM: Distance: ERROR[0m
+[0;32mI (57498) SYSTEM: Distance: ERROR[0m
+[0;32mI (57778) SYSTEM: Distance: ERROR[0m
+[0;32mI (58828) SYSTEM: No person (score=-46)[0m
+[0;32mI (58858) SYSTEM: Distance: ERROR[0m
+[0;32mI (59138) SYSTEM: Distance: ERROR[0m
+[0;32mI (59418) SYSTEM: Distance: ERROR[0m
+[0;32mI (60468) SYSTEM: No person (score=-43)[0m
+[0;32mI (60498) SYSTEM: Distance: ERROR[0m
+[0;32mI (60778) SYSTEM: Distance: ERROR[0m
+[0;32mI (61058) SYSTEM: Distance: ERROR[0m
+[0;32mI (62108) SYSTEM: No person (score=-34)[0m
+[0;32mI (62138) SYSTEM: Distance: ERROR[0m
+[0;32mI (62418) SYSTEM: Distance: ERROR[0m
+[0;32mI (62698) SYSTEM: Distance: ERROR[0m
+[0;32mI (63748) SYSTEM: No person (score=-55)[0m
+[0;32mI (63778) SYSTEM: Distance: ERROR[0m
+[0;32mI (64058) SYSTEM: Distance: ERROR[0m
+[0;32mI (64338) SYSTEM: Distance: ERROR[0m
+[0;32mI (65388) SYSTEM: No person (score=-40)[0m
+[0;32mI (65418) SYSTEM: Distance: ERROR[0m
+[0;32mI (65698) SYSTEM: Distance: ERROR[0m
+[0;32mI (65978) SYSTEM: Distance: ERROR[0m
+[0;32mI (67028) SYSTEM: No person (score=-48)[0m
+[0;32mI (67058) SYSTEM: Distance: ERROR[0m
+[0;32mI (67338) SYSTEM: Distance: ERROR[0m
+[0;32mI (67618) SYSTEM: Distance: ERROR[0m
+[0;32mI (68668) SYSTEM: No person (score=-43)[0m
+[0;32mI (68698) SYSTEM: Distance: ERROR[0m
+[0;32mI (68978) SYSTEM: Distance: ERROR[0m
+[0;32mI (69258) SYSTEM: Distance: ERROR[0m
+[0;32mI (70308) SYSTEM: No person (score=-45)[0m
+[0;32mI (70338) SYSTEM: Distance: ERROR[0m
+[0;32mI (70618) SYSTEM: Distance: ERROR[0m
+[0;32mI (70898) SYSTEM: Distance: ERROR[0m
+[0;32mI (71948) SYSTEM: No person (score=14)[0m
+[0;32mI (71978) SYSTEM: Distance: ERROR[0m
+[0;32mI (72258) SYSTEM: Distance: ERROR[0m
+[0;32mI (72538) SYSTEM: Distance: ERROR[0m
+[0;32mI (73588) SYSTEM: No person (score=47)[0m
+[0;32mI (73618) SYSTEM: Distance: ERROR[0m
+[0;32mI (73898) SYSTEM: Distance: ERROR[0m
+[0;32mI (74178) SYSTEM: Distance: ERROR[0m
+[0;32mI (75228) SYSTEM: No person (score=40)[0m
+[0;32mI (75258) SYSTEM: Distance: ERROR[0m
+[0;32mI (75538) SYSTEM: Distance: ERROR[0m
+[0;32mI (75818) SYSTEM: Distance: ERROR[0m
+[0;32mI (76868) SYSTEM: No person (score=27)[0m
+[0;32mI (76898) SYSTEM: Distance: ERROR[0m
+[0;32mI (77178) SYSTEM: Distance: ERROR[0m
+[0;32mI (77458) SYSTEM: Distance: ERROR[0m
+[0;32mI (78508) SYSTEM: No person (score=-14)[0m
+[0;32mI (78538) SYSTEM: Distance: ERROR[0m
+[0;32mI (78818) SYSTEM: Distance: ERROR[0m
+[0;32mI (79098) SYSTEM: Distance: ERROR[0m
+[0;32mI (80148) SYSTEM: No person (score=-37)[0m
+[0;32mI (80178) SYSTEM: Distance: ERROR[0m
+[0;32mI (80458) SYSTEM: Distance: ERROR[0m
+[0;32mI (80738) SYSTEM: Distance: ERROR[0m
+[0;32mI (81788) SYSTEM: No person (score=-55)[0m
+[0;32mI (81818) SYSTEM: Distance: ERROR[0m
+[0;32mI (82098) SYSTEM: Distance: ERROR[0m
+[0;32mI (82378) SYSTEM: Distance: ERROR[0m
+[0;32mI (83428) SYSTEM: No person (score=-26)[0m
+[0;32mI (83458) SYSTEM: Distance: ERROR[0m
+[0;32mI (83738) SYSTEM: Distance: ERROR[0m
+[0;32mI (84018) SYSTEM: Distance: ERROR[0m
+[0;32mI (85068) SYSTEM: No person (score=-11)[0m
+[0;32mI (85098) SYSTEM: Distance: ERROR[0m
+[0;32mI (85378) SYSTEM: Distance: ERROR[0m
+[0;32mI (85658) SYSTEM: Distance: ERROR[0m
+[0;32mI (86708) SYSTEM: No person (score=-65)[0m
+[0;32mI (86738) SYSTEM: Distance: ERROR[0m
+[0;32mI (87018) SYSTEM: Distance: ERROR[0m
+[0;32mI (87298) SYSTEM: Distance: ERROR[0m
+[0;32mI (88348) SYSTEM: No person (score=-23)[0m
+[0;32mI (88378) SYSTEM: Distance: ERROR[0m
+[0;32mI (88658) SYSTEM: Distance: ERROR[0m
+[0;32mI (88938) SYSTEM: Distance: ERROR[0m
+[0;32mI (89988) SYSTEM: No person (score=-22)[0m
+[0;32mI (90018) SYSTEM: Distance: ERROR[0m
+[0;32mI (90298) SYSTEM: Distance: ERROR[0m
+[0;32mI (90548) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (91628) SYSTEM: No person (score=10)[0m
+[0;32mI (91628) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (91878) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (92128) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (92378) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (92698) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (92948) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (93198) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (93198) SYSTEM: No person (score=-57)[0m
+[0;32mI (93448) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (93698) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (93948) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (94838) SYSTEM: No person (score=-42)[0m
+[0;32mI (94838) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (95088) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (95338) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (95588) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (96478) SYSTEM: No person (score=-54)[0m
+[0;32mI (96478) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (96728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (96978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (97228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (98118) SYSTEM: No person (score=-30)[0m
+[0;32mI (98118) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (98368) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (98618) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (98868) SYSTEM: Distance: 0.6 cm[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (231) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (248) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (332) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (354) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (372) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (231) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) lo�ets Jun  8 2016 00:22:57[0m
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x6 (SDIO_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (231) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (248) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (332) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (354) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (372) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1286) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1294) cpu_start: Pro cpu start user code[0m
+[0;32mI (1294) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1294) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1300) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1313) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1317) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1325) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1351) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1370) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1578) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1748) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1748) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1748) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (1808) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1808) main_task: Returned from app_main()[0m
+[0;32mI (2058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3078) SYSTEM: No person (score=-43)[0m
+[0;32mI (3308) SYSTEM: Distance: 0.6 cm[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (231) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (248) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (332) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (354) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (372) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1286) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1294) cpu_start: Pro cpu start user code[0m
+[0;32mI (1294) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1294) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1300) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1313) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1317) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1325) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1351) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1370) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1578) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1748) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1748) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1748) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (1808) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1808) main_task: Returned from app_main()[0m
+[0;32mI (2058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3078) SYSTEM: No person (score=27)[0m
+[0;32mI (3308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4728) SYSTEM: No person (score=-95)[0m
+[0;32mI (4728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5478) SYSTEM: Distance: 0.6 cm[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v1.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (76) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (251) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (259) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (276) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (360) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (394) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (394) esp_psram: Speed: 40MHz[0m
+[0;32mI (394) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (400) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (408) cpu_start: Multicore app[0m
+[0;32mI (1314) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1322) cpu_start: Pro cpu start user code[0m
+[0;32mI (1322) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1322) app_init: Application information:[0m
+[0;32mI (1322) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1327) app_init: App version:      1[0m
+[0;32mI (1331) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1336) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1341) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1344) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1348) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1352) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1357) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1363) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1368) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1373) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1379) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1384) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1390) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1398) spi_flash: detected chip: generic[0m
+[0;32mI (1400) spi_flash: flash io: dio[0m
+[0;33mW (1403) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1416) main_task: Started on CPU0[0m
+[0;32mI (1426) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1426) main_task: Calling app_main()[0m
+[0;32mI (1446) SYSTEM: Init camera[0m
+[0;32mI (1446) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1446) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1446) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1446) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1456) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1456) cam_hal: cam init ok[0m
+[0;32mI (1456) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1466) sccb-ng: sccb_i2c_port=1[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v1.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (76) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),b��.-H�VR��.	)&�H����Յ�����ͺ�jR�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+I (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load
+[0;32mI (231) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (248) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (332) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (354) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (372) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1286) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1294) cpu_start: Pro cpu start user code[0m
+[0;32mI (1294) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1294) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1300) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1313) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1317) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1325) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1351) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1370) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1578) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1748) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1748) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1748) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1838) SYSTEM: Distance: ERROR[0m
+[0;32mI (1838) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1838) main_task: Returned from app_main()[0m
+[0;32mI (2118) SYSTEM: Distance: ERROR[0m
+[0;32mI (2398) SYSTEM: Distance: ERROR[0m
+[0;32mI (2678) SYSTEM: Distance: ERROR[0m
+[0;32mI (2958) SYSTEM: Distance: ERROR[0m
+[0;32mI (3078) SYSTEM: No person (score=-30)[0m
+[0;32mI (3238) SYSTEM: Distance: ERROR[0m
+[0;32mI (3518) SYSTEM: Distance: ERROR[0m
+[0;32mI (3798) SYSTEM: Distance: ERROR[0m
+[0;32mI (4718) SYSTEM: No person (score=-40)[0m
+[0;32mI (4748) SYSTEM: Distance: ERROR[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (230) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (247) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (331) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (353) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (371) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1285) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1293) cpu_start: Pro cpu start user code[0m
+[0;32mI (1293) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1293) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1299) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1312) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1324) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1350) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1369) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1578) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1748) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1748) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1748) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (1808) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1808) main_task: Returned from app_main()[0m
+[0;32mI (2058) SYSTEM: Distance: 0.0 cm[0m
+[0;32mI (2308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2808) SYSTEM: Distance: 0.7 cm[0m
+[0;32mI (3058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3078) SYSTEM: No person (score=-80)[0m
+[0;32mI (3308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3588) SYSTEM: Distance: ERROR[0m
+[0;32mI (3868) SYSTEM: Distance: ERROR[0m
+[0;32mI (4728) SYSTEM: No person (score=-52)[0m
+[0;32mI (4758) SYSTEM: Distance: ERROR[0m
+[0;32mI (5008) SYSTEM: Distance: 50.5 cm[0m
+[0;32mI (5288) SYSTEM: Distance: ERROR[0m
+[0;32mI (6368) SYSTEM: No person (score=49)[0m
+[0;32mI (6378) SYSTEM: Distance: 51.5 cm[0m
+[0;32mI (6628) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6878) SYSTEM: Distance: 60.4 cm[0m
+[0;32mI (7128) SYSTEM: Distance: 63.1 cm[0m
+[0;32mI (8008) SYSTEM: No person (score=31)[0m
+[0;32mI (8018) SYSTEM: Distance: 52.0 cm[0m
+[0;32mI (8268) SYSTEM: Distance: 51.1 cm[0m
+[0;32mI (8518) SYSTEM: Distance: 50.0 cm[0m
+[0;32mI (8768) SYSTEM: Distance: 50.0 cm[0m
+[0;32mI (9648) SYSTEM: No person (score=27)[0m
+[0;32mI (9658) SYSTEM: Distance: 50.0 cm[0m
+[0;32mI (9908) SYSTEM: Distance: 49.9 cm[0m
+[0;32mI (10158) SYSTEM: Distance: 50.8 cm[0m
+[0;32mI (10408) SYSTEM: Distance: 50.0 cm[0m
+[0;32mI (11288) SYSTEM: No person (score=-11)[0m
+[0;32mI (11298) SYSTEM: Distance: 50.0 cm[0m
+[0;32mI (11548) SYSTEM: Distance: 50.0 cm[0m
+[0;32mI (11798) SYSTEM: Distance: 50.0 cm[0m
+[0;32mI (12048) SYSTEM: Distance: 53.4 cm[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v1.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (76) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+I (251) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load
+[0;32mI (259) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (276) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (360) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (394) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (394) esp_psram: Speed: 40MHz[0m
+[0;32mI (394) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (400) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (408) cpu_start: Multicore app[0m
+[0;32mI (1314) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1322) cpu_start: Pro cpu start user code[0m
+[0;32mI (1322) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1322) app_init: Application information:[0m
+[0;32mI (1322) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1328) app_init: App version:      1[0m
+[0;32mI (1331) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1336) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1341) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1344) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1348) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1352) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1357) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1363) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1368) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1373) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1379) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1384) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1390) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1398) spi_flash: detected chip: generic[0m
+[0;32mI (1400) spi_flash: flash io: dio[0m
+[0;33mW (1403) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1416) main_task: Started on CPU0[0m
+[0;32mI (1426) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1426) main_task: Calling app_main()[0m
+[0;32mI (1446) SYSTEM: Init camera[0m
+[0;32mI (1446) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1446) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1446) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1446) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1456) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1456) cam_hal: cam init ok[0m
+[0;32mI (1456) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1466) sccb-ng: sccb_i2c_port=1[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v1.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (76) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (251) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (259) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (276) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (360) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (394) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (394) esp_psram: Speed: 40MHz[0m
+[0;32mI (394) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (400) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (408) cpu_start: Multicore app[0m
+[0;32mI (1313) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1322) cpu_start: Pro cpu start user code[0m
+[0;32mI (1322) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1322) app_init: Application information:[0m
+[0;32mI (1322) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1327) app_init: App version:      1[0m
+[0;32mI (1331) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1336) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1341) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1344) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1348) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1352) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1357) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1363) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1368) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1373) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1379) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1384) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1390) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1398) spi_flash: detected chip: generic[0m
+[0;32mI (1400) spi_flash: flash io: dio[0m
+[0;33mW (1403) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1416) main_task: Started on CPU0[0m
+[0;32mI (1426) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1426) main_task: Calling app_main()[0m
+[0;32mI (1446) SYSTEM: Init camera[0m
+[0;32mI (1446) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1446) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1446) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1446) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1456) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1456) cam_hal: cam init ok[0m
+[0;32mI (1456) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1466) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1496) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1496) camera: Detected OV2640 camera[0m
+[0;32mI (1496) camera: Detected camera at address=0x30[0m
+[0;32mI (1576) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1576) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1586) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1596) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1596) cam_hal: cam config ok[0m
+[0;32mI (1606) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1686) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1686) SYSTEM: Init LEDs[0m
+[0;32mI (1686) SYSTEM: Init HC-SR04[0m
+[0;32mI (1776) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1776) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1776) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1786) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1796) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1806) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1806) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1816) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1816) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1826) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1826) MEMORY: ================================[0m
+[0;32mI (1836) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (1836) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1836) main_task: Returned from app_main()[0m
+[0;32mI (2086) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2336) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2586) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2836) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3086) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3106) SYSTEM: No person (score=-1)[0m
+[0;32mI (3336) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3586) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3836) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4756) SYSTEM: No person (score=40)[0m
+[0;32mI (4756) SYSTEM: Distance: 0.4 cm[0m
+[0;32mI (5006) SYSTEM: Distance: 11.8 cm[0m
+[0;32mI (5256) SYSTEM: Distance: 165.0 cm[0m
+[0;32mI (5506) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6396) SYSTEM: No person (score=50)[0m
+[0;32mI (6396) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6646) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6896) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (7146) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8036) SYSTEM: No person (score=12)[0m
+[0;32mI (8036) SYSTEM: Distance: 12.2 cm[0m
+[0;32mI (8316) SYSTEM: Distance: ERROR[0m
+[0;32mI (8566) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8816) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9676) SYSTEM: No person (score=-7)[0m
+[0;32mI (9676) SYSTEM: Distance: 6.0 cm[0m
+[0;32mI (9926) SYSTEM: Distance: 5.6 cm[0m
+[0;32mI (10176) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10426) SYSTEM: Distance: 5.6 cm[0m
+[0;32mI (11316) SYSTEM: No person (score=-46)[0m
+[0;32mI (11316) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11566) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11816) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (12066) SYSTEM: Distance: 5.6 cm[0m
+[0;32mI (12956) SYSTEM: No person (score=-61)[0m
+[0;32mI (12956) SYSTEM: Distance: 4.7 cm[0m
+[0;32mI (13206) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13456) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13706) SYSTEM: Distance: 0.6 cm[0m
+E BOD: Brownout detector was  ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+�     ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+I (29) boot: ESP-IDF v5.5.1 2nd stage bootloader
+I (29) boot: compile time Nov 21 2025 10:20:12
+I (29) boot: Mets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_ets Jun  8 2016 00:22:57
+
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESETets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),booets Jets Jun  8 2016 00:22:57
+
+rst:0xets Jun  8 2ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_Bets Jun  8 2016 00:22:57
+
+rst:0x10 (RTets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESEets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drets Jun  8 2016 00:22:57
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (57) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (58) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (58) boot: Multicore bootloader[0m
+[0;32mI (60) boot: chip revision: v1.1[0m
+[0;32mI (62) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (66) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (70) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (73) boot.esp32: PRO CPU has been reset by WDT[0m
+[0;33mW (78) boot.esp32: WDT rst info: PRO CPU PC=0xc21006c0[0m
+[0;33mW (83) boot.esp32: WDT rst info: APP CPU PC=0x82658f7b[0m
+[0;32mI (87) boot: Enabling RNG            ets Jun  8 2016 00:22:57[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_dr6:   ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.1[0m
+I (3s A    ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Spe Y		�'$MLS��CER���S	J��ϩ��&&'�*�RHS�6$$HH��: DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG FFets Jun  8 2016 00:22:57[0m
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (231) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (248) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (332) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (354) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (372) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1286) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1294) cpu_start: Pro cpu start user code[0m
+[0;32mI (1294) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1294) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1300) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1313) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1317) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1324) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1351) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1370) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1578) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1748) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1748) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1748) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1808) SYSTEM: Distance: 4.3 cm[0m
+[0;32mI (1808) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1808) main_task: Returned from app_main()[0m
+[0;32mI (2058) SYSTEM: Distance: 4.7 cm[0m
+[0;32mI (2308) SYSTEM: Distance: 43.5 cm[0m
+[0;32mI (2558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2838) SYSTEM: Distance: ERROR[0m
+[0;32mI (3078) SYSTEM: PERSON DETECTED (score=82)[0m
+[0;32mI (3088) SYSTEM: Distance: 71.5 cm[0m
+[0;32mI (3368) SYSTEM: Distance: ERROR[0m
+[0;32mI (3648) SYSTEM: Distance: ERROR[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v1.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (76) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (251) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (259) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (276) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (360) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (394) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (394) esp_psram: Speed: 40MHz[0m
+[0;32mI (394) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (400) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (408) cpu_start: Multicore app[0m
+[0;32mI (1314) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1322) cpu_start: Pro cpu start user code[0m
+[0;32mI (1322) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1322) app_init: Application information:[0m
+[0;32mI (1322) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1328) app_init: App version:      1[0m
+[0;32mI (1331) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1336) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1341) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1344) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1348) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1352) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1357) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1363) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1368) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1373) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1379) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1384) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1390) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1398) spi_flash: detected chip: generic[0m
+[0;32mI (1400) spi_flash: flash io: dio[0m
+[0;33mW (1403) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1416) main_task: Started on CPU0[0m
+[0;32mI (1426) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1426) main_task: Calling app_main()[0m
+[0;32mI (1446) SYSTEM: Init camera[0m
+[0;32mI (1446) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1446) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1446) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1446) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1456) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1456) cam_hal: cam init ok[0m
+[0;32mI (1456) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1466) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1496) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1496) camera: Detected OV2640 camera[0m
+[0;32mI (1496) camera: Detected camera at address=0x30[0m
+[0;32mI (1576) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1576) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1586) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1596) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1596) cam_hal: cam config ok[0m
+[0;32mI (1606) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1686) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1686) SYSTEM: Init LEDs[0m
+[0;32mI (1686) SYSTEM: Init HC-SR04[0m
+[0;32mI (1776) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1776) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1776) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1786) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1796) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1806) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1806) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1816) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1816) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1826) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1826) MEMORY: ================================[0m
+[0;32mI (1866) SYSTEM: Distance: ERROR[0m
+[0;32mI (1866) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1866) main_task: Returned from app_main()[0m
+[0;32mI (2146) SYSTEM: Distance: ERROR[0m
+[0;32mI (2396) SYSTEM: Distance: 1.1 cm[0m
+[0;32mI (2646) SYSTEM: Distance: 0.2 cm[0m
+[0;32mI (2906) SYSTEM: Distance: 315.4 cm[0m
+[0;32mI (3116) SYSTEM: PERSON DETECTED (score=104)[0m
+[0;32mI (3156) SYSTEM: Distance: 56.9 cm[0m
+[0;32mI (3406) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3666) SYSTEM: Distance: 207.9 cm[0m
+[0;32mI (4756) SYSTEM: PERSON DETECTED (score=82)[0m
+[0;32mI (4786) SYSTEM: Distance: ERROR[0m
+[0;32mI (5066) SYSTEM: Distance: ERROR[0m
+[0;32mI (5316) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6396) SYSTEM: PERSON DETECTED (score=105)[0m
+[0;32mI (6406) SYSTEM: Distance: 196.5 cm[0m
+[0;32mI (6656) SYSTEM: Distance: 0.7 cm[0m
+[0;32mI (6906) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (7156) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8036) SYSTEM: PERSON DETECTED (score=104)[0m
+[0;32mI (8046) SYSTEM: Distance: 40.0 cm[0m
+[0;32mI (8296) SYSTEM: Distance: 39.4 cm[0m
+[0;32mI (8546) SYSTEM: Distance: 39.0 cm[0m
+[0;32mI (8796) SYSTEM: Distance: 40.3 cm[0m
+[0;32mI (9676) SYSTEM: PERSON DETECTED (score=69)[0m
+[0;32mI (9686) SYSTEM: Distance: 40.9 cm[0m
+[0;32mI (9966) SYSTEM: Distance: ERROR[0m
+[0;32mI (10246) SYSTEM: Distance: ERROR[0m
+[0;32mI (11316) SYSTEM: PERSON DETECTED (score=89)[0m
+[0;32mI (11326) SYSTEM: Distance: 42.2 cm[0m
+[0;32mI (11576) SYSTEM: Distance: 42.1 cm[0m
+[0;32mI (11826) SYSTEM: Distance: 40.1 cm[0m
+[0;32mI (12076) SYSTEM: Distance: 41.8 cm[0m
+[0;32mI (12956) SYSTEM: PERSON DETECTED (score=104)[0m
+[0;32mI (12966) SYSTEM: Distance: 43.5 cm[0m
+[0;32mI (13216) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13496) SYSTEM: Distance: ERROR[0m
+[0;32mI (14596) SYSTEM: No person (score=-18)[0m
+[0;32mI (14596) SYSTEM: Distance: 14707.9 cm[0m
+[0;32mI (14876) SYSTEM: Distance: ERROR[0m
+[0;32mI (15126) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (15376) SYSTEM: Distance: 1.2 cm[0m
+[0;32mI (16236) SYSTEM: No person (score=54)[0m
+[0;32mI (16236) SYSTEM: Distance: 2.2 cm[0m
+[0;32mI (16516) SYSTEM: Distance: ERROR[0m
+[0;32mI (16766) SYSTEM: Distance: 4.7 cm[0m
+[0;32mI (17016) SYSTEM: Distance: 34.0 cm[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v1.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (76) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (251) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (259) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (276) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (360) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (394) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (394) esp_psram: Speed: 40MHz[0m
+[0;32mI (394) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (400) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (408) cpu_start: Multicore app[0m
+[0;32mI (1314) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1322) cpu_start: Pro cpu start user code[0m
+[0;32mI (1322) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1322) app_init: Application information:[0m
+[0;32mI (1322) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1328) app_init: App version:      1[0m
+[0;32mI (1331) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1336) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1341) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1344) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1348) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1352) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1357) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1363) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1368) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1373) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1379) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1384) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1390) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1398) spi_flash: detected chip: generic[0m
+[0;32mI (1400) spi_flash: flash io: dio[0m
+[0;33mW (1403) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1416) main_task: Started on CPU0[0m
+[0;32mI (1426) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1426) main_task: Calling app_main()[0m
+[0;32mI (1446) SYSTEM: Init camera[0m
+[0;32mI (1446) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1446) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1446) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1446) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1456) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1456) cam_hal: cam init ok[0m
+[0;32mI (1456) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1466) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1496) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1496) camera: Detected OV2640 camera[0m
+[0;32mI (1496) camera: Detected camera at address=0x30[0m
+[0;32mI (1576) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1576) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1586) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1596) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1596) cam_hal: cam config ok[0m
+[0;32mI (1606) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1686) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1686) SYSTEM: Init LEDs[0m
+[0;32mI (1686) SYSTEM: Init HC-SR04[0m
+[0;32mI (1776) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1776) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1776) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1786) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1796) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1806) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1806) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1816) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1816) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1826) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1826) MEMORY: ================================[0m
+[0;32mI (1836) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (1836) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1836) main_task: Returned from app_main()[0m
+[0;32mI (2086) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2336) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2586) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2836) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3086) SYSTEM: Distance: 0.7 cm[0m
+[0;32mI (3106) SYSTEM: No person (score=-60)[0m
+[0;32mI (3336) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3586) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3836) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4756) SYSTEM: No person (score=-32)[0m
+[0;32mI (4756) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5006) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5256) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5506) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6396) SYSTEM: No person (score=-51)[0m
+[0;32mI (6396) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6646) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6896) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (7146) SYSTEM: Distance: 23.3 cm[0m
+[0;32mI (8036) SYSTEM: No person (score=19)[0m
+[0;32mI (8036) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8286) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8536) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8786) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9676) SYSTEM: No person (score=-44)[0m
+[0;32mI (9676) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9926) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10176) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10426) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11316) SYSTEM: No person (score=-25)[0m
+[0;32mI (11316) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11566) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11816) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (12066) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (12956) SYSTEM: No person (score=40)[0m
+[0;32mI (12956) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13206) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13456) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13706) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (14596) SYSTEM: No person (score=14)[0m
+[0;32mI (14596) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (14846) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (15096) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (15346) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16236) SYSTEM: No person (score=-18)[0m
+[0;32mI (16236) SYSTEM: Distance: 8.4 cm[0m
+[0;32mI (16486) SYSTEM: Distance: 29.0 cm[0m
+[0;32mI (16736) SYSTEM: Distance: 29.0 cm[0m
+[0;32mI (16986) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (17716) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (17866) SYSTEM: No person (score=14)[0m
+[0;32mI (17966) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (18216) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (18466) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (19506) SYSTEM: PERSON DETECTED (score=86)[0m
+[0;32mI (19506) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (19756) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (20006) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (20256) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21146) SYSTEM: No person (score=41)[0m
+[0;32mI (21146) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21396) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21646) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21896) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (22786) SYSTEM: No person (score=44)[0m
+[0;32mI (22786) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (23036) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (23286) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (23536) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24426) SYSTEM: No person (score=55)[0m
+[0;32mI (24426) SYSTEM: Distance: 7.2 cm[0m
+[0;32mI (24676) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24926) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (25176) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26066) SYSTEM: No person (score=29)[0m
+[0;32mI (26066) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26316) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26566) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26816) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (27706) SYSTEM: No person (score=22)[0m
+[0;32mI (27706) SYSTEM: Distance: 29.1 cm[0m
+[0;32mI (27966) SYSTEM: Distance: 28.6 cm[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (230) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (247) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (331) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (353) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (353) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (371) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (230) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (247) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (331) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (353) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (353) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (371) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1285) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1293) cpu_start: Pro cpu start user code[0m
+[0;32mI (1293) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1293) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1299) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1312) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1324) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1328) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1350) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1369) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1578) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1748) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1748) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1748) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (1808) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1808) main_task: Returned from app_main()[0m
+[0;32mI (2058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3078) SYSTEM: No person (score=6)[0m
+[0;32mI (3308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4728) SYSTEM: No person (score=-9)[0m
+[0;32mI (4728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5478) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6368) SYSTEM: No person (score=45)[0m
+[0;32mI (6368) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6618) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6868) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (7118) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8008) SYSTEM: No person (score=-11)[0m
+[0;32mI (8008) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8258) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8508) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8758) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9648) SYSTEM: No person (score=20)[0m
+[0;32mI (9648) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9898) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10148) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10398) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11288) SYSTEM: No person (score=-65)[0m
+[0;32mI (11288) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11538) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11788) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (12038) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (12928) SYSTEM: No person (score=10)[0m
+[0;32mI (12928) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13178) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13428) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13678) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (14568) SYSTEM: No person (score=-27)[0m
+[0;32mI (14568) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (14818) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (15068) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (15318) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16208) SYSTEM: No person (score=-44)[0m
+[0;32mI (16208) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16458) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16708) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16958) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (17688) SYSTEM: Distance: 20.0 cm[0m
+[0;32mI (17838) SYSTEM: No person (score=19)[0m
+[0;32mI (17938) SYSTEM: Distance: 14.2 cm[0m
+[0;32mI (18188) SYSTEM: Distance: 20.0 cm[0m
+[0;32mI (18438) SYSTEM: Distance: 20.2 cm[0m
+[0;32mI (19478) SYSTEM: No person (score=2)[0m
+[0;32mI (19478) SYSTEM: Distance: 20.4 cm[0m
+[0;32mI (19728) SYSTEM: Distance: 20.4 cm[0m
+[0;32mI (19978) SYSTEM: Distance: 20.3 cm[0m
+[0;32mI (20228) SYSTEM: Distance: 20.2 cm[0m
+[0;32mI (21118) SYSTEM: No person (score=-16)[0m
+[0;32mI (21118) SYSTEM: Distance: 20.2 cm[0m
+[0;32mI (21378) SYSTEM: Distance: 19.6 cm[0m
+[0;32mI (21628) SYSTEM: Distance: 19.9 cm[0m
+[0;32mI (21878) SYSTEM: Distance: 20.4 cm[0m
+[0;32mI (22758) SYSTEM: No person (score=51)[0m
+[0;32mI (22758) SYSTEM: Distance: 19.9 cm[0m
+[0;32mI (23008) SYSTEM: Distance: 20.0 cm[0m
+[0;32mI (23258) SYSTEM: Distance: 19.9 cm[0m
+[0;32mI (23508) SYSTEM: Distance: 19.9 cm[0m
+[0;32mI (24398) SYSTEM: No person (score=1)[0m
+[0;32mI (24398) SYSTEM: Distance: 21.9 cm[0m
+[0;32mI (24648) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24898) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (25148) SYSTEM: Distance: 30.3 cm[0m
+[0;32mI (26038) SYSTEM: No person (score=23)[0m
+[0;32mI (26038) SYSTEM: Distance: 29.2 cm[0m
+[0;32mI (26298) SYSTEM: Distance: 29.5 cm[0m
+[0;32mI (26548) SYSTEM: Distance: 32.1 cm[0m
+[0;32mI (26798) SYSTEM: Distance: 30.5 cm[0m
+[0;32mI (27678) SYSTEM: No person (score=-17)[0m
+[0;32mI (27678) SYSTEM: Distance: 29.9 cm[0m
+[0;32mI (27938) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (28188) SYSTEM: Distance: 30.0 cm[0m
+[0;32mI (28438) SYSTEM: Distance: 30.0 cm[0m
+[0;32mI (29318) SYSTEM: No person (score=-11)[0m
+[0;32mI (29318) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29568) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29818) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (30068) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (30958) SYSTEM: No person (score=2)[0m
+[0;32mI (30958) SYSTEM: Distance: 28.4 cm[0m
+[0;32mI (31218) SYSTEM: Distance: 25.5 cm[0m
+[0;32mI (31468) SYSTEM: Distance: 24.2 cm[0m
+[0;32mI (31718) SYSTEM: Distance: 24.1 cm[0m
+[0;32mI (32598) SYSTEM: No person (score=5)[0m
+[0;32mI (32598) SYSTEM: Distance: 23.5 cm[0m
+[0;32mI (32858) SYSTEM: Distance: 23.1 cm[0m
+[0;32mI (33108) SYSTEM: Distance: 23.5 cm[0m
+[0;32mI (33358) SYSTEM: Distance: 23.5 cm[0m
+[0;32mI (34238) SYSTEM: No person (score=-10)[0m
+[0;32mI (34238) SYSTEM: Distance: 23.5 cm[0m
+[0;32mI (34498) SYSTEM: Distance: 23.5 cm[0m
+[0;32mI (34748) SYSTEM: Distance: 23.5 cm[0m
+[0;32mI (34998) SYSTEM: Distance: 23.5 cm[0m
+[0;32mI (35878) SYSTEM: No person (score=-31)[0m
+[0;32mI (35878) SYSTEM: Distance: 23.5 cm[0m
+[0;32mI (36138) SYSTEM: Distance: 23.4 cm[0m
+[0;32mI (36388) SYSTEM: Distance: 22.7 cm[0m
+[0;32mI (36638) SYSTEM: Distance: 22.8 cm[0m
+[0;32mI (37518) SYSTEM: No person (score=2)[0m
+[0;32mI (37518) SYSTEM: Distance: 19.6 cm[0m
+[0;32mI (37768) SYSTEM: Distance: 19.6 cm[0m
+[0;32mI (38018) SYSTEM: Distance: 19.6 cm[0m
+[0;32mI (38268) SYSTEM: Distance: 19.6 cm[0m
+[0;32mI (39158) SYSTEM: No person (score=25)[0m
+[0;32mI (39158) SYSTEM: Distance: 20.1 cm[0m
+[0;32mI (39408) SYSTEM: Distance: 19.6 cm[0m
+[0;32mI (39658) SYSTEM: Distance: 20.0 cm[0m
+[0;32mI (39908) SYSTEM: Distance: 20.1 cm[0m
+[0;32mI (40798) SYSTEM: No person (score=-7)[0m
+[0;32mI (40798) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41048) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41298) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41548) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42438) SYSTEM: No person (score=-2)[0m
+[0;32mI (42438) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42688) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42938) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (43188) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44078) SYSTEM: No person (score=3)[0m
+[0;32mI (44078) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44328) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44578) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44828) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (45718) SYSTEM: No person (score=-58)[0m
+[0;32mI (45718) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (45968) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (46218) SYSTEM: Distance: 20.0 cm[0m
+[0;32mI (46468) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (47358) SYSTEM: No person (score=-51)[0m
+[0;32mI (47358) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (47608) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (47858) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (48108) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (48998) SYSTEM: No person (score=-57)[0m
+[0;32mI (48998) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (49248) SYSTEM: Distance: 19.6 cm[0m
+[0;32mI (49498) SYSTEM: Distance: 19.5 cm[0m
+[0;32mI (49748) SYSTEM: Distance: 19.5 cm[0m
+[0;32mI (50638) SYSTEM: No person (score=-27)[0m
+[0;32mI (50638) SYSTEM: Distance: 19.9 cm[0m
+[0;32mI (50888) SYSTEM: Distance: 19.5 cm[0m
+[0;32mI (51138) SYSTEM: Distance: 20.4 cm[0m
+[0;32mI (51388) SYSTEM: Distance: 19.5 cm[0m
+[0;32mI (52278) SYSTEM: No person (score=-57)[0m
+[0;32mI (52278) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (52528) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (52778) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (53028) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (53918) SYSTEM: No person (score=-17)[0m
+[0;32mI (53918) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (54168) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (54418) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (54668) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (55558) SYSTEM: No person (score=1)[0m
+[0;32mI (55558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (55808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (56058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (56308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (57198) SYSTEM: No person (score=2)[0m
+[0;32mI (57198) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (57448) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (57698) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (57948) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (58838) SYSTEM: No person (score=8)[0m
+[0;32mI (58838) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (59088) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (59338) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (59588) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (60478) SYSTEM: No person (score=4)[0m
+[0;32mI (60478) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (60728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (60978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (61228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (62118) SYSTEM: No person (score=19)[0m
+[0;32mI (62118) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (62368) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (62618) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (62868) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (63758) SYSTEM: No person (score=-9)[0m
+[0;32mI (63758) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (64008) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (64258) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (64508) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (65398) SYSTEM: No person (score=-20)[0m
+[0;32mI (65398) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (65648) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (65898) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (66148) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (67038) SYSTEM: No person (score=-14)[0m
+[0;32mI (67038) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (67288) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (67538) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (67788) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (68678) SYSTEM: No person (score=-17)[0m
+[0;32mI (68678) SYSTEM: Distance: 6.9 cm[0m
+[0;32mI (68928) SYSTEM: Distance: 7.7 cm[0m
+[0;32mI (69178) SYSTEM: Distance: 21.4 cm[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v1.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (76) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (251) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (259) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (276) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (360) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (382) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (382) boot: Disabling RNG early entropy source...[0m
+[0;32mI (392) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (394) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (394) esp_psram: Speed: 40MHz[0m
+[0;32mI (394) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (400) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (408) cpu_start: Multicore app[0m
+[0;32mI (1314) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1322) cpu_start: Pro cpu start user code[0m
+[0;32mI (1322) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1322) app_init: Application information:[0m
+[0;32mI (1322) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1328) app_init: App version:      1[0m
+[0;32mI (1331) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1336) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1341) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1344) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1348) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1352) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1357) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1363) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1368) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1373) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1379) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1384) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1390) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1398) spi_flash: detected chip: generic[0m
+[0;32mI (1400) spi_flash: flash io: dio[0m
+[0;33mW (1403) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1416) main_task: Started on CPU0[0m
+[0;32mI (1426) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1426) main_task: Calling app_main()[0m
+[0;32mI (1446) SYSTEM: Init camera[0m
+[0;32mI (1446) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1446) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1446) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1446) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1456) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1456) cam_hal: cam init ok[0m
+[0;32mI (1456) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1466) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1496) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1496) camera: Detected OV2640 camera[0m
+[0;32mI (1496) camera: Detected camera at address=0x30[0m
+[0;32mI (1576) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1576) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1586) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1596) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1596) cam_hal: cam config ok[0m
+[0;32mI (1606) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1686) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1686) SYSTEM: Init LEDs[0m
+[0;32mI (1686) SYSTEM: Init HC-SR04[0m
+[0;32mI (1776) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1776) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1776) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1786) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1796) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1806) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1806) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1816) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1816) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1826) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1826) MEMORY: ================================[0m
+[0;32mI (1836) SYSTEM: Distance: 21.9 cm[0m
+[0;32mI (1836) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1836) main_task: Returned from app_main()[0m
+[0;32mI (2086) SYSTEM: Distance: 21.0 cm[0m
+[0;32mI (2336) SYSTEM: Distance: 22.9 cm[0m
+[0;32mI (2586) SYSTEM: Distance: 21.7 cm[0m
+[0;32mI (2836) SYSTEM: Distance: 21.6 cm[0m
+[0;32mI (3086) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3116) SYSTEM: No person (score=27)[0m
+[0;32mI (3336) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3586) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3836) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4756) SYSTEM: No person (score=9)[0m
+[0;32mI (4756) SYSTEM: Distance: 19.7 cm[0m
+[0;32mI (5016) SYSTEM: Distance: 20.3 cm[0m
+[0;32mI (5266) SYSTEM: Distance: 20.8 cm[0m
+[0;32mI (5516) SYSTEM: Distance: 22.0 cm[0m
+[0;32mI (6396) SYSTEM: No person (score=-32)[0m
+[0;32mI (6396) SYSTEM: Distance: 20.3 cm[0m
+[0;32mI (6646) SYSTEM: Distance: 20.6 cm[0m
+[0;32mI (6896) SYSTEM: Distance: 21.1 cm[0m
+[0;32mI (7146) SYSTEM: Distance: 20.7 cm[0m
+[0;32mI (8036) SYSTEM: No person (score=2)[0m
+[0;32mI (8036) SYSTEM: Distance: 20.7 cm[0m
+[0;32mI (8286) SYSTEM: Distance: 20.6 cm[0m
+[0;32mI (8536) SYSTEM: Distance: 20.6 cm[0m
+[0;32mI (8786) SYSTEM: Distance: 21.0 cm[0m
+[0;32mI (9676) SYSTEM: No person (score=-4)[0m
+[0;32mI (9676) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9926) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10176) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10426) SYSTEM: Distance: 47.1 cm[0m
+[0;32mI (11316) SYSTEM: No person (score=-10)[0m
+[0;32mI (11316) SYSTEM: Distance: 20.0 cm[0m
+[0;32mI (11566) SYSTEM: Distance: 19.4 cm[0m
+[0;32mI (11816) SYSTEM: Distance: 20.6 cm[0m
+[0;32mI (12066) SYSTEM: Distance: 22.7 cm[0m
+[0;32mI (12956) SYSTEM: No person (score=28)[0m
+[0;32mI (12956) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13206) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13456) SYSTEM: Distance: 20.7 cm[0m
+[0;32mI (13706) SYSTEM: Distance: 10.0 cm[0m
+[0;32mI (14596) SYSTEM: No person (score=-37)[0m
+[0;32mI (14596) SYSTEM: Distance: 14.4 cm[0m
+[0;32mI (14846) SYSTEM: Distance: 22.9 cm[0m
+[0;32mI (15096) SYSTEM: Distance: 22.9 cm[0m
+[0;32mI (15346) SYSTEM: Distance: 22.8 cm[0m
+[0;32mI (16236) SYSTEM: No person (score=-40)[0m
+[0;32mI (16236) SYSTEM: Distance: 24.1 cm[0m
+[0;32mI (16506) SYSTEM: Distance: 272.1 cm[0m
+[0;32mI (16756) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (17006) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (17716) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (17866) SYSTEM: No person (score=-5)[0m
+[0;32mI (17976) SYSTEM: Distance: 272.3 cm[0m
+[0;32mI (18236) SYSTEM: Distance: 273.2 cm[0m
+[0;32mI (18496) SYSTEM: Distance: 271.4 cm[0m
+[0;32mI (19506) SYSTEM: No person (score=-29)[0m
+[0;32mI (19506) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (19756) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (20006) SYSTEM: Distance: 23.1 cm[0m
+[0;32mI (20256) SYSTEM: Distance: 22.3 cm[0m
+[0;32mI (21146) SYSTEM: No person (score=-35)[0m
+[0;32mI (21146) SYSTEM: Distance: 22.3 cm[0m
+[0;32mI (21406) SYSTEM: Distance: 22.3 cm[0m
+[0;32mI (21656) SYSTEM: Distance: 22.2 cm[0m
+[0;32mI (21906) SYSTEM: Distance: 22.2 cm[0m
+[0;32mI (22786) SYSTEM: No person (score=-13)[0m
+[0;32mI (22786) SYSTEM: Distance: 21.8 cm[0m
+[0;32mI (23036) SYSTEM: Distance: 22.2 cm[0m
+[0;32mI (23286) SYSTEM: Distance: 22.2 cm[0m
+[0;32mI (23536) SYSTEM: Distance: 21.8 cm[0m
+[0;32mI (24426) SYSTEM: No person (score=-10)[0m
+[0;32mI (24426) SYSTEM: Distance: 20.9 cm[0m
+[0;32mI (24676) SYSTEM: Distance: 19.9 cm[0m
+[0;32mI (24926) SYSTEM: Distance: 20.4 cm[0m
+[0;32mI (25176) SYSTEM: Distance: 21.7 cm[0m
+[0;32mI (26066) SYSTEM: No person (score=-17)[0m
+[0;32mI (26066) SYSTEM: Distance: 21.2 cm[0m
+[0;32mI (26316) SYSTEM: Distance: 21.2 cm[0m
+[0;32mI (26566) SYSTEM: Distance: 20.8 cm[0m
+[0;32mI (26816) SYSTEM: Distance: 19.6 cm[0m
+[0;32mI (27706) SYSTEM: No person (score=-9)[0m
+[0;32mI (27706) SYSTEM: Distance: 16.9 cm[0m
+[0;32mI (27956) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (28206) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (28456) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29346) SYSTEM: No person (score=-34)[0m
+[0;32mI (29346) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29596) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29846) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (30096) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (30986) SYSTEM: No person (score=-35)[0m
+[0;32mI (30986) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (31236) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (31486) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (31736) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (32626) SYSTEM: No person (score=-12)[0m
+[0;32mI (32626) SYSTEM: Distance: 21.3 cm[0m
+[0;32mI (32876) SYSTEM: Distance: 22.8 cm[0m
+[0;32mI (33126) SYSTEM: Distance: 23.3 cm[0m
+[0;32mI (33376) SYSTEM: Distance: 22.8 cm[0m
+[0;32mI (34266) SYSTEM: No person (score=30)[0m
+[0;32mI (34266) SYSTEM: Distance: 20.8 cm[0m
+[0;32mI (34516) SYSTEM: Distance: 19.3 cm[0m
+[0;32mI (34766) SYSTEM: Distance: 18.3 cm[0m
+[0;32mI (35016) SYSTEM: Distance: 18.3 cm[0m
+[0;32mI (35906) SYSTEM: No person (score=2)[0m
+[0;32mI (35906) SYSTEM: Distance: 19.1 cm[0m
+[0;32mI (36156) SYSTEM: Distance: 18.8 cm[0m
+[0;32mI (36406) SYSTEM: Distance: 18.8 cm[0m
+[0;32mI (36656) SYSTEM: Distance: 18.8 cm[0m
+[0;32mI (37546) SYSTEM: No person (score=-45)[0m
+[0;32mI (37546) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (37796) SYSTEM: Distance: 18.3 cm[0m
+[0;32mI (38046) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (38296) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39186) SYSTEM: No person (score=-6)[0m
+[0;32mI (39186) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39436) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39686) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39936) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (40826) SYSTEM: No person (score=-18)[0m
+[0;32mI (40826) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41076) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41326) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41576) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42466) SYSTEM: No person (score=-59)[0m
+[0;32mI (42466) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42716) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42966) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (43216) SYSTEM: Distance: 18.3 cm[0m
+[0;32mI (44106) SYSTEM: No person (score=6)[0m
+[0;32mI (44106) SYSTEM: Distance: 18.3 cm[0m
+[0;32mI (44356) SYSTEM: Distance: 17.8 cm[0m
+[0;32mI (44606) SYSTEM: Distance: 18.7 cm[0m
+[0;32mI (44856) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (45746) SYSTEM: No person (score=37)[0m
+[0;32mI (45746) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (45996) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (46246) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (46496) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (47386) SYSTEM: PERSON DETECTED (score=68)[0m
+[0;32mI (47386) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (47636) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (47886) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (48136) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (49026) SYSTEM: No person (score=-31)[0m
+[0;32mI (49026) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (49276) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (49526) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (49776) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (50666) SYSTEM: No person (score=-25)[0m
+[0;32mI (50666) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (50916) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (51166) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (51416) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (52306) SYSTEM: No person (score=-13)[0m
+[0;32mI (52306) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (52556) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (52806) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (53056) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (53946) SYSTEM: No person (score=0)[0m
+[0;32mI (53946) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (54196) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (54446) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (54696) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (55586) SYSTEM: No person (score=-3)[0m
+[0;32mI (55586) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (55836) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (56086) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (56336) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (57226) SYSTEM: No person (score=-14)[0m
+[0;32mI (57226) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (57476) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (57726) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (57976) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (58866) SYSTEM: No person (score=-10)[0m
+[0;32mI (58866) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (59116) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (59366) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (59616) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (60506) SYSTEM: No person (score=16)[0m
+[0;32mI (60506) SYSTEM: Distance: 16.9 cm[0m
+[0;32mI (60756) SYSTEM: Distance: 16.6 cm[0m
+[0;32mI (61006) SYSTEM: Distance: 17.2 cm[0m
+[0;32mI (61256) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (62146) SYSTEM: No person (score=-14)[0m
+[0;32mI (62146) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (62396) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (62646) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (62896) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (63786) SYSTEM: No person (score=5)[0m
+[0;32mI (63786) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (64036) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (64286) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (64536) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (65426) SYSTEM: No person (score=-13)[0m
+[0;32mI (65426) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (65676) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (65926) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (66176) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (67066) SYSTEM: No person (score=-2)[0m
+[0;32mI (67066) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (67316) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (67566) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (67816) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (68706) SYSTEM: No person (score=1)[0m
+[0;32mI (68706) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (68956) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (69206) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (69456) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (70346) SYSTEM: No person (score=-3)[0m
+[0;32mI (70346) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (70596) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (70846) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (71096) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (71986) SYSTEM: No person (score=-21)[0m
+[0;32mI (71986) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (72236) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (72486) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (72736) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (73626) SYSTEM: No person (score=-4)[0m
+[0;32mI (73626) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (73876) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (74126) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (74376) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (75266) SYSTEM: No person (score=-15)[0m
+[0;32mI (75266) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (75516) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (75766) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (76016) SYSTEM: Distance: 0.6 cm[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (231) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (248) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (332) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (354) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (372) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1286) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1294) cpu_start: Pro cpu start user code[0m
+[0;32mI (1294) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1294) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1300) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1313) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1324) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1351) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1370) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1578) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1748) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1748) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1748) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (1808) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1808) main_task: Returned from app_main()[0m
+[0;32mI (2058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3078) SYSTEM: No person (score=-42)[0m
+[0;32mI (3308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4728) SYSTEM: No person (score=-92)[0m
+[0;32mI (4728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5478) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6368) SYSTEM: No person (score=31)[0m
+[0;32mI (6368) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6618) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6868) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (7118) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8008) SYSTEM: No person (score=22)[0m
+[0;32mI (8008) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8258) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8508) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8758) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9648) SYSTEM: No person (score=45)[0m
+[0;32mI (9648) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9898) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10148) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10398) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11288) SYSTEM: PERSON DETECTED (score=84)[0m
+[0;32mI (11288) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11538) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11788) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (12038) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (12928) SYSTEM: PERSON DETECTED (score=107)[0m
+[0;32mI (12928) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13178) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13428) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13678) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (14568) SYSTEM: PERSON DETECTED (score=69)[0m
+[0;32mI (14568) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (14818) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (15068) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (15318) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16208) SYSTEM: PERSON DETECTED (score=82)[0m
+[0;32mI (16208) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16458) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16708) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16958) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (17688) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (17838) SYSTEM: PERSON DETECTED (score=108)[0m
+[0;32mI (17938) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (18188) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (18438) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (19478) SYSTEM: PERSON DETECTED (score=113)[0m
+[0;32mI (19478) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (19728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (19978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (20228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21118) SYSTEM: PERSON DETECTED (score=107)[0m
+[0;32mI (21118) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21368) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21618) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21868) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (22758) SYSTEM: No person (score=14)[0m
+[0;32mI (22758) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (23008) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (23258) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (23508) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24398) SYSTEM: No person (score=-36)[0m
+[0;32mI (24398) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24648) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24898) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (25148) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26038) SYSTEM: No person (score=5)[0m
+[0;32mI (26038) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26288) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26538) SYSTEM: Distance: 3.0 cm[0m
+[0;32mI (26788) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (27678) SYSTEM: No person (score=-49)[0m
+[0;32mI (27678) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (27928) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (28178) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (28428) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29318) SYSTEM: No person (score=-17)[0m
+[0;32mI (29318) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29568) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29818) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (30068) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (30958) SYSTEM: PERSON DETECTED (score=69)[0m
+[0;32mI (30958) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (31208) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (31458) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (31708) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (32598) SYSTEM: No person (score=59)[0m
+[0;32mI (32598) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (32848) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (33098) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (33348) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34238) SYSTEM: No person (score=0)[0m
+[0;32mI (34238) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34488) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34738) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34988) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (35878) SYSTEM: No person (score=-14)[0m
+[0;32mI (35878) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (36128) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (36378) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (36628) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (37518) SYSTEM: No person (score=-5)[0m
+[0;32mI (37518) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (37768) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (38018) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (38268) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39158) SYSTEM: No person (score=-34)[0m
+[0;32mI (39158) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39408) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39658) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39908) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (40798) SYSTEM: No person (score=2)[0m
+[0;32mI (40798) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41048) SYSTEM: Distance: 20.2 cm[0m
+[0;32mI (41298) SYSTEM: Distance: 24.8 cm[0m
+[0;32mI (41548) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42438) SYSTEM: No person (score=-10)[0m
+[0;32mI (42438) SYSTEM: Distance: 23.4 cm[0m
+[0;32mI (42698) SYSTEM: Distance: 19.7 cm[0m
+[0;32mI (42948) SYSTEM: Distance: 16.0 cm[0m
+[0;32mI (43198) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44078) SYSTEM: No person (score=-25)[0m
+[0;32mI (44078) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44348) SYSTEM: Distance: 354.7 cm[0m
+[0;32mI (44598) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44848) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (45718) SYSTEM: No person (score=-4)[0m
+[0;32mI (45718) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (45968) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (46218) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (46468) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (47358) SYSTEM: No person (score=3)[0m
+[0;32mI (47358) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (47608) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (47858) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (48108) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (48998) SYSTEM: No person (score=-25)[0m
+[0;32mI (48998) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (49248) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (49498) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (49748) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (50638) SYSTEM: No person (score=-56)[0m
+[0;32mI (50638) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (50888) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (51138) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (51388) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (52278) SYSTEM: No person (score=-25)[0m
+[0;32mI (52278) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (52528) SYSTEM: Distance: 13.2 cm[0m
+[0;32mI (52778) SYSTEM: Distance: 20.2 cm[0m
+[0;32mI (53028) SYSTEM: Distance: 12.5 cm[0m
+[0;32mI (53918) SYSTEM: No person (score=-7)[0m
+[0;32mI (53918) SYSTEM: Distance: 12.5 cm[0m
+[0;32mI (54168) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (54418) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (54668) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (55558) SYSTEM: No person (score=9)[0m
+[0;32mI (55558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (55808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (56058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (56308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (57198) SYSTEM: No person (score=-6)[0m
+[0;32mI (57198) SYSTEM: Distance: 16.0 cm[0m
+[0;32mI (57448) SYSTEM: Distance: 5.6 cm[0m
+[0;32mI (57698) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (57948) SYSTEM: Distance: 5.8 cm[0m
+[0;32mI (58838) SYSTEM: No person (score=-2)[0m
+[0;32mI (58838) SYSTEM: Distance: 14.1 cm[0m
+[0;32mI (59088) SYSTEM: Distance: 12.4 cm[0m
+[0;32mI (59338) SYSTEM: Distance: 12.3 cm[0m
+[0;32mI (59588) SYSTEM: Distance: 12.7 cm[0m
+[0;32mI (60478) SYSTEM: No person (score=-10)[0m
+[0;32mI (60478) SYSTEM: Distance: 3.8 cm[0m
+[0;32mI (60728) SYSTEM: Distance: 3.8 cm[0m
+[0;32mI (60978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (61228) SYSTEM: Distance: 0.6 cm[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v1.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (76) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data         ��  ets Jun  8 2016 00:22:57[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (230) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (247) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+I (331) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (353) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (371) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1285) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1293) cpu_start: Pro cpu start user code[0m
+[0;32mI (1293) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1293) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1299) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1312) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1324) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1350) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1369) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1578) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1748) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1748) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1748) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (1808) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1808) main_task: Returned from app_main()[0m
+[0;32mI (2058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2308) SYSTEM: Distance: 5.6 cm[0m
+[0;32mI (2558) SYSTEM: Distance: 84.8 cm[0m
+[0;32mI (2818) SYSTEM: Distance: 284.7 cm[0m
+[0;32mI (3068) SYSTEM: Distance: 25.5 cm[0m
+[0;32mI (3088) SYSTEM: No person (score=-76)[0m
+[0;32mI (3318) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3568) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3848) SYSTEM: Distance: ERROR[0m
+[0;32mI (4728) SYSTEM: No person (score=-49)[0m
+[0;32mI (4728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5478) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6368) SYSTEM: No person (score=-49)[0m
+[0;32mI (6368) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6618) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6868) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (7118) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8008) SYSTEM: No person (score=-53)[0m
+[0;32mI (8028) SYSTEM: Distance: 213.3 cm[0m
+[0;32mI (8278) SYSTEM: Distance: 8.6 cm[0m
+[0;32mI (8528) SYSTEM: Distance: 11.8 cm[0m
+[0;32mI (8778) SYSTEM: Distance: 19.5 cm[0m
+[0;32mI (9648) SYSTEM: No person (score=-37)[0m
+[0;32mI (9648) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9898) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10148) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10398) SYSTEM: Distance: 58.8 cm[0m
+[0;32mI (11288) SYSTEM: PERSON DETECTED (score=79)[0m
+[0;32mI (11318) SYSTEM: Distance: ERROR[0m
+[0;32mI (11598) SYSTEM: Distance: ERROR[0m
+[0;32mI (11868) SYSTEM: Distance: 387.2 cm[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xe�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x33 (SPI_FAST_FLASH_BOOT)
+flash read err, 1000
+ets_main.c 371 
+ets Jun  8 2016 00:22:57
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (231) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (248) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc58h (244824) map[0m
+[0;32mI (332) esp_image: segment 4: paddr=000bbc80 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c36d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (354) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (372) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1286) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1294) cpu_start: Pro cpu start user code[0m
+[0;32mI (1294) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1294) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1300) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  bd757bef9...[0m
+[0;32mI (1313) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1317) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1325) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1351) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1370) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1578) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1748) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1748) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1748) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (1808) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1808) main_task: Returned from app_main()[0m
+[0;32mI (2058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (2808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3058) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3078) SYSTEM: No person (score=25)[0m
+[0;32mI (3308) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (3808) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4728) SYSTEM: PERSON DETECTED (score=107)[0m
+[0;32mI (4728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5478) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6368) SYSTEM: No person (score=-91)[0m
+[0;32mI (6368) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6618) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6868) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (7118) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8008) SYSTEM: No person (score=33)[0m
+[0;32mI (8008) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8258) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8508) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8758) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9648) SYSTEM: PERSON DETECTED (score=69)[0m
+[0;32mI (9648) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9898) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10148) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10398) SYSTEM: Distance: 42.3 cm[0m
+[0;32mI (11288) SYSTEM: PERSON DETECTED (score=83)[0m
+[0;32mI (11288) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11538) SYSTEM: Distance: 23.8 cm[0m
+[0;32mI (11788) SYSTEM: Distance: 23.8 cm[0m
+[0;32mI (12038) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (12928) SYSTEM: PERSON DETECTED (score=102)[0m
+[0;32mI (12928) SYSTEM: Distance: 23.8 cm[0m
+[0;32mI (13188) SYSTEM: Distance: 23.4 cm[0m
+[0;32mI (13438) SYSTEM: Distance: 23.9 cm[0m
+[0;32mI (13688) SYSTEM: Distance: 23.4 cm[0m
+[0;32mI (14568) SYSTEM: PERSON DETECTED (score=64)[0m
+[0;32mI (14568) SYSTEM: Distance: 23.8 cm[0m
+[0;32mI (14828) SYSTEM: Distance: 23.4 cm[0m
+[0;32mI (15078) SYSTEM: Distance: 23.4 cm[0m
+[0;32mI (15328) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16208) SYSTEM: PERSON DETECTED (score=81)[0m
+[0;32mI (16208) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16458) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16708) SYSTEM: Distance: 23.9 cm[0m
+[0;32mI (16958) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (17688) SYSTEM: Distance: 23.2 cm[0m
+[0;32mI (17838) SYSTEM: No person (score=42)[0m
+[0;32mI (17938) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (18188) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (18438) SYSTEM: Distance: 23.5 cm[0m
+[0;32mI (19478) SYSTEM: No person (score=38)[0m
+[0;32mI (19478) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (19728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (19978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (20228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21118) SYSTEM: No person (score=57)[0m
+[0;32mI (21118) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21368) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21618) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21868) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (22758) SYSTEM: PERSON DETECTED (score=97)[0m
+[0;32mI (22758) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (23008) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (23258) SYSTEM: Distance: 23.0 cm[0m
+[0;32mI (23508) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24398) SYSTEM: PERSON DETECTED (score=107)[0m
+[0;32mI (24398) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24648) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24898) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (25148) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26038) SYSTEM: PERSON DETECTED (score=100)[0m
+[0;32mI (26038) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26288) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26538) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26788) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (27678) SYSTEM: PERSON DETECTED (score=62)[0m
+[0;32mI (27678) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (27928) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (28178) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (28428) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29318) SYSTEM: No person (score=34)[0m
+[0;32mI (29318) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29568) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29818) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (30068) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (30958) SYSTEM: PERSON DETECTED (score=68)[0m
+[0;32mI (30958) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (31208) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (31458) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (31708) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (32598) SYSTEM: No person (score=31)[0m
+[0;32mI (32598) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (32848) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (33098) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (33348) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34238) SYSTEM: No person (score=51)[0m
+[0;32mI (34238) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34488) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34738) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34988) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (35878) SYSTEM: No person (score=15)[0m
+[0;32mI (35878) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (36128) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (36378) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (36628) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (37518) SYSTEM: No person (score=28)[0m
+[0;32mI (37518) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (37768) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (38018) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (38268) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39158) SYSTEM: No person (score=-23)[0m
+[0;32mI (39158) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39408) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39658) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (39908) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (40798) SYSTEM: No person (score=13)[0m
+[0;32mI (40798) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41048) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41298) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41548) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42438) SYSTEM: No person (score=46)[0m
+[0;32mI (42438) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42688) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42938) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (43188) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44078) SYSTEM: No person (score=-2)[0m
+[0;32mI (44078) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44328) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44578) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (44828) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (45718) SYSTEM: No person (score=-37)[0m
+[0;32mI (45718) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (45968) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (46218) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (46478) SYSTEM: Distance: 303.1 cm[0m
+[0;32mI (47358) SYSTEM: No person (score=-40)[0m
+[0;32mI (47368) SYSTEM: Distance: 205.7 cm[0m
+[0;32mI (47628) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (47878) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (48128) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (48998) SYSTEM: No person (score=-21)[0m
+[0;32mI (48998) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (49248) SYSTEM: Distance: 113.4 cm[0m
+[0;32mI (49498) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (49748) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (50638) SYSTEM: No person (score=-28)[0m
+[0;32mI (50638) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (50888) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (51138) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (51388) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (52278) SYSTEM: No person (score=-46)[0m
+[0;32mI (52278) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (52558) SYSTEM: Distance: ERROR[0m
+[0;32mI (52808) SYSTEM: Distance: 67.2 cm[0m
+[0;32mI (53918) SYSTEM: No person (score=-2)[0m
+[0;32mI (53918) SYSTEM: Distance: ERROR[0m
+[0;32mI (54168) SYSTEM: Distance: 48.2 cm[0m
+[0;32mI (54418) SYSTEM: Distance: 152.3 cm[0m
+[0;32mI (54698) SYSTEM: Distance: ERROR[0m
+[0;32mI (55558) SYSTEM: No person (score=-14)[0m
+[0;32mI (55558) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (55808) SYSTEM: Distance: 0.7 cm[0m
+[0;32mI (56058) SYSTEM: Distance: 0.7 cm[0m
+[0;32mI (56308) SYSTEM: Distance: 0.7 cm[0m
+[0;32mI (57198) SYSTEM: No person (score=-31)[0m
+[0;32mI (57198) SYSTEM: Distance: 0.7 cm[0m
+[0;32mI (57448) SYSTEM: Distance: 0.5 cm[0m
+[0;32mI (57728) SYSTEM: Distance: ERROR[0m
+[0;32mI (57978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (58838) SYSTEM: No person (score=15)[0m
+[0;32mI (58838) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (59088) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (59338) SYSTEM: Distance: 0.7 cm[0m
+[0;32mI (59588) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (60478) SYSTEM: No person (score=-30)[0m
+[0;32mI (60478) SYSTEM: Distance: 0.7 cm[0m
+[0;32mI (60728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (60978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (61228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (62118) SYSTEM: No person (score=-12)[0m
+[0;32mI (62148) SYSTEM: Distance: ERROR[0m
+[0;32mI (62398) SYSTEM: Distance: 94.9 cm[0m
+[0;32mI (62648) SYSTEM: Distance: 35.9 cm[0m
+[0;32mI (62898) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (63758) SYSTEM: No person (score=-15)[0m
+[0;32mI (63758) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (64008) SYSTEM: Distance: 50.0 cm[0m
+[0;32mI (64288) SYSTEM: Distance: ERROR[0m
+[0;32mI (65398) SYSTEM: No person (score=-67)[0m
+[0;32mI (65398) SYSTEM: Distance: 14879.2 cm[0m
+[0;32mI (65678) SYSTEM: Distance: ERROR[0m
+[0;32mI (65928) SYSTEM: Distance: 58.3 cm[0m
+[0;32mI (66178) SYSTEM: Distance: 23.5 cm[0m
+[0;32mI (67038) SYSTEM: No person (score=-49)[0m
+[0;32mI (67038) SYSTEM: Distance: 24.9 cm[0m
+[0;32mI (67298) SYSTEM: Distance: 22.6 cm[0m
+[0;32mI (67548) SYSTEM: Distance: 22.8 cm[0m
+[0;32mI (67798) SYSTEM: Distance: 23.3 cm[0m
+[0;32mI (68678) SYSTEM: No person (score=-18)[0m
+[0;32mI (68688) SYSTEM: Distance: 62.5 cm[0m
+[0;32mI (68938) SYSTEM: Distance: 62.0 cm[0m
+[0;32mI (69188) SYSTEM: Distance: 63.7 cm[0m
+[0;32mI (69438) SYSTEM: Distance: 62.6 cm[0m
+[0;32mI (70318) SYSTEM: No person (score=-59)[0m
+[0;32mI (70328) SYSTEM: Distance: 57.5 cm[0m
+[0;32mI (70608) SYSTEM: Distance: ERROR[0m
+[0;32mI (70858) SYSTEM: Distance: 56.0 cm[0m
+[0;32mI (71108) SYSTEM: Distance: 55.7 cm[0m
+[0;32mI (71958) SYSTEM: No person (score=-22)[0m
+[0;32mI (71968) SYSTEM: Distance: 40.7 cm[0m
+[0;32mI (72218) SYSTEM: Distance: 42.8 cm[0m
+[0;32mI (72468) SYSTEM: Distance: 40.4 cm[0m
+[0;32mI (72718) SYSTEM: Distance: 38.5 cm[0m
+[0;32mI (73598) SYSTEM: No person (score=1)[0m
+[0;32mI (73608) SYSTEM: Distance: 38.9 cm[0m
+[0;32mI (73858) SYSTEM: Distance: 38.7 cm[0m
+[0;32mI (74108) SYSTEM: Distance: 38.2 cm[0m
+[0;32mI (74388) SYSTEM: Distance: ERROR[0m
+[0;32mI (75238) SYSTEM: No person (score=18)[0m
+[0;32mI (75238) SYSTEM: Distance: 20.1 cm[0m
+[0;32mI (75488) SYSTEM: Distance: 19.9 cm[0m
+[0;32mI (75738) SYSTEM: Distance: 19.9 cm[0m
+[0;32mI (75988) SYSTEM: Distance: 20.1 cm[0m
+[0;32mI (76878) SYSTEM: No person (score=44)[0m
+[0;32mI (76878) SYSTEM: Distance: 20.2 cm[0m
+[0;32mI (77128) SYSTEM: Distance: 19.7 cm[0m
+[0;32mI (77378) SYSTEM: Distance: 20.0 cm[0m
+[0;32mI (77628) SYSTEM: Distance: 20.3 cm[0m
+[0;32mI (78518) SYSTEM: No person (score=-2)[0m
+[0;32mI (78518) SYSTEM: Distance: 18.9 cm[0m
+[0;32mI (78768) SYSTEM: Distance: 19.1 cm[0m
+[0;32mI (79018) SYSTEM: Distance: 19.6 cm[0m
+[0;32mI (79268) SYSTEM: Distance: 19.1 cm[0m
+[0;32mI (80158) SYSTEM: No person (score=-21)[0m
+[0;32mI (80158) SYSTEM: Distance: 19.2 cm[0m
+[0;32mI (80408) SYSTEM: Distance: 19.1 cm[0m
+[0;32mI (80658) SYSTEM: Distance: 18.8 cm[0m
+[0;32mI (80908) SYSTEM: Distance: 18.8 cm[0m
+[0;32mI (81798) SYSTEM: No person (score=0)[0m
+[0;32mI (81808) SYSTEM: Distance: 38.1 cm[0m
+[0;32mI (82058) SYSTEM: Distance: 40.5 cm[0m
+[0;32mI (82308) SYSTEM: Distance: 39.0 cm[0m
+[0;32mI (82558) SYSTEM: Distance: 36.4 cm[0m
+[0;32mI (83438) SYSTEM: No person (score=18)[0m
+[0;32mI (83438) SYSTEM: Distance: 18.6 cm[0m
+[0;32mI (83688) SYSTEM: Distance: 18.5 cm[0m
+[0;32mI (83938) SYSTEM: Distance: 18.4 cm[0m
+[0;32mI (84188) SYSTEM: Distance: 19.7 cm[0m
+[0;32mI (85078) SYSTEM: No person (score=-21)[0m
+[0;32mI (85088) SYSTEM: Distance: 44.5 cm[0m
+[0;32mI (85338) SYSTEM: Distance: 42.7 cm[0m
+[0;32mI (85588) SYSTEM: Distance: 40.4 cm[0m
+[0;32mI (85838) SYSTEM: Distance: 31.4 cm[0m
+[0;32mI (86718) SYSTEM: PERSON DETECTED (score=80)[0m
+[0;32mI (86718) SYSTEM: Distance: 18.4 cm[0m
+[0;32mI (86968) SYSTEM: Distance: 17.4 cm[0m
+[0;32mI (87218) SYSTEM: Distance: 17.6 cm[0m
+[0;32mI (87468) SYSTEM: Distance: 17.4 cm[0m
+[0;32mI (88358) SYSTEM: No person (score=-28)[0m
+[0;32mI (88358) SYSTEM: Distance: 17.3 cm[0m
+[0;32mI (88608) SYSTEM: Distance: 20.3 cm[0m
+[0;32mI (88858) SYSTEM: Distance: 20.3 cm[0m
+[0;32mI (89108) SYSTEM: Distance: 18.6 cm[0m
+[0;32mI (89998) SYSTEM: No person (score=-23)[0m
+[0;32mI (89998) SYSTEM: Distance: 16.9 cm[0m
+[0;32mI (90248) SYSTEM: Distance: 17.4 cm[0m
+[0;32mI (90498) SYSTEM: Distance: 17.3 cm[0m
+[0;32mI (90748) SYSTEM: Distance: 17.3 cm[0m
+[0;32mI (91638) SYSTEM: No person (score=-18)[0m
+[0;32mI (91638) SYSTEM: Distance: 17.4 cm[0m
+[0;32mI (91888) SYSTEM: Distance: 17.3 cm[0m
+[0;32mI (92138) SYSTEM: Distance: 19.3 cm[0m
+[0;32mI (92388) SYSTEM: Distance: 18.5 cm[0m
+[0;32mI (92698) SYSTEM: Distance: 21.6 cm[0m
+[0;32mI (92948) SYSTEM: Distance: 33.3 cm[0m
+[0;32mI (93208) SYSTEM: No person (score=-45)[0m
+[0;32mI (93228) SYSTEM: Distance: ERROR[0m
+[0;32mI (93508) SYSTEM: Distance: ERROR[0m
+[0;32mI (93758) SYSTEM: Distance: 50.5 cm[0m
+[0;32mI (94848) SYSTEM: No person (score=30)[0m
+[0;32mI (94878) SYSTEM: Distance: ERROR[0m
+[0;32mI (95158) SYSTEM: Distance: ERROR[0m
+[0;32mI (95438) SYSTEM: Distance: ERROR[0m
+[0;32mI (96488) SYSTEM: No person (score=-65)[0m
+[0;32mI (96518) SYSTEM: Distance: ERROR[0m
+[0;32mI (96798) SYSTEM: Distance: ERROR[0m
+[0;32mI (97078) SYSTEM: Distance: ERROR[0m
+[0;32mI (98128) SYSTEM: PERSON DETECTED (score=97)[0m
+[0;32mI (98158) SYSTEM: Distance: ERROR[0m
+[0;32mI (98438) SYSTEM: Distance: ERROR[0m
+[0;32mI (98718) SYSTEM: Distance: ERROR[0m
+[0;32mI (99768) SYSTEM: PERSON DETECTED (score=110)[0m
+[0;32mI (99798) SYSTEM: Distance: ERROR[0m
+[0;32mI (100078) SYSTEM: Distance: ERROR[0m
+[0;32mI (100358) SYSTEM: Distance: ERROR[0m
+[0;32mI (101408) SYSTEM: PERSON DETECTED (score=114)[0m
+[0;32mI (101438) SYSTEM: Distance: ERROR[0m
+[0;32mI (101718) SYSTEM: Distance: ERROR[0m
+[0;32mI (101998) SYSTEM: Distance: ERROR[0m
+[0;32mI (103048) SYSTEM: No person (score=-14)[0m
+[0;32mI (103078) SYSTEM: Distance: ERROR[0m
+[0;32mI (103358) SYSTEM: Distance: ERROR[0m
+[0;32mI (103608) SYSTEM: Distance: 71.7 cm[0m
+[0;32mI (104688) SYSTEM: No person (score=-40)[0m
+[0;32mI (104718) SYSTEM: Distance: ERROR[0m
+[0;32mI (104998) SYSTEM: Distance: ERROR[0m
+[0;32mI (105278) SYSTEM: Distance: ERROR[0m
+[0;32mI (106328) SYSTEM: PERSON DETECTED (score=69)[0m
+[0;32mI (106358) SYSTEM: Distance: ERROR[0m
+[0;32mI (106608) SYSTEM: Distance: 69.4 cm[0m
+[0;32mI (106858) SYSTEM: Distance: 67.8 cm[0m
+[0;32mI (107108) SYSTEM: Distance: 67.9 cm[0m
+[0;32mI (107968) SYSTEM: PERSON DETECTED (score=99)[0m
+[0;32mI (107998) SYSTEM: Distance: ERROR[0m
+[0;32mI (108278) SYSTEM: Distance: ERROR[0m
+[0;32mI (108558) SYSTEM: Distance: ERROR[0m
+[0;32mI (109608) SYSTEM: No person (score=-36)[0m
+[0;32mI (109618) SYSTEM: Distance: 105.5 cm[0m
+[0;32mI (109868) SYSTEM: Distance: 103.5 cm[0m
+[0;32mI (110118) SYSTEM: Distance: 110.8 cm[0m
+[0;32mI (110398) SYSTEM: Distance: ERROR[0m
+[0;32mI (111248) SYSTEM: No person (score=-71)[0m
+[0;32mI (111278) SYSTEM: Distance: ERROR[0m
+[0;32mI (111558) SYSTEM: Distance: ERROR[0m
+[0;32mI (111838) SYSTEM: Distance: ERROR[0m
+[0;32mI (112888) SYSTEM: No person (score=-71)[0m
+[0;32mI (112918) SYSTEM: Distance: ERROR[0m
+[0;32mI (113198) SYSTEM: Distance: ERROR[0m
+[0;32mI (113478) SYSTEM: Distance: ERROR[0m
+[0;32mI (114528) SYSTEM: No person (score=-86)[0m
+[0;32mI (114558) SYSTEM: Distance: ERROR[0m
+[0;32mI (114838) SYSTEM: Distance: ERROR[0m
+[0;32mI (115118) SYSTEM: Distance: ERROR[0m
+[0;32mI (116168) SYSTEM: No person (score=-73)[0m
+[0;32mI (116198) SYSTEM: Distance: ERROR[0m
+[0;32mI (116478) SYSTEM: Distance: ERROR[0m
+[0;32mI (116758) SYSTEM: Distance: ERROR[0m
+[0;32mI (117678) SYSTEM: Distance: ERROR[0m
+[0;32mI (117798) SYSTEM: No person (score=-9)[0m
+[0;32mI (117958) SYSTEM: Distance: ERROR[0m
+[0;32mI (118238) SYSTEM: Distance: ERROR[0m
+[0;32mI (118518) SYSTEM: Distance: ERROR[0m
+[0;32mI (119438) SYSTEM: No person (score=-92)[0m

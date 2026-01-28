@@ -1,0 +1,314 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\Devansh\Downloads\Personal_Learning_project\build\Personal_Learning_project.elf C:\Users\Devansh\Downloads\Personal_Learning_project\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM8'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 21 2025 10:20:12[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=60a64h (395876) map[0m
+[0;32mI (223) esp_image: segment 1: paddr=00070a8c vaddr=3ffb0000 size=04d4ch ( 19788) load[0m
+[0;32mI (230) esp_image: segment 2: paddr=000757e0 vaddr=40080000 size=0a838h ( 43064) load[0m
+[0;32mI (247) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=3bc88h (244872) map[0m
+[0;32mI (331) esp_image: segment 4: paddr=000bbcb0 vaddr=4008a838 size=07a48h ( 31304) load[0m
+[0;32mI (344) esp_image: segment 5: paddr=000c3700 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (353) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (354) boot: Disabling RNG early entropy source...[0m
+[0;32mI (364) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (366) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (366) esp_psram: Speed: 40MHz[0m
+[0;32mI (366) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (371) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (380) cpu_start: Multicore app[0m
+[0;32mI (1285) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1293) cpu_start: Pro cpu start user code[0m
+[0;32mI (1293) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1294) app_init: Application information:[0m
+[0;32mI (1294) app_init: Project name:     Personal_Learning_project[0m
+[0;32mI (1299) app_init: App version:      1[0m
+[0;32mI (1303) app_init: Compile time:     Nov 21 2025 10:43:28[0m
+[0;32mI (1308) app_init: ELF file SHA256:  ceceaa6fa...[0m
+[0;32mI (1312) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (1316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1320) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1324) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (1329) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1335) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1340) heap_init: At 3FFB8758 len 000278A8 (158 KiB): DRAM[0m
+[0;32mI (1345) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1351) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1356) heap_init: At 40092280 len 0000DD80 (55 KiB): IRAM[0m
+[0;32mI (1362) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1370) spi_flash: detected chip: generic[0m
+[0;32mI (1372) spi_flash: flash io: dio[0m
+[0;33mW (1375) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1388) main_task: Started on CPU0[0m
+[0;32mI (1398) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1398) main_task: Calling app_main()[0m
+[0;32mI (1418) SYSTEM: Init camera[0m
+[0;32mI (1418) CAMERA: Initializing ESP32-CAM with PSRAM...[0m
+[0;32mI (1418) CAMERA: ✓ PSRAM detected[0m
+[0;32mI (1418) CAMERA:   Total: 4194304 bytes (4.0 MB)[0m
+[0;32mI (1418) CAMERA:   Free: 4192024 bytes (4.0 MB)[0m
+[0;32mI (1428) CAMERA:   Free DRAM: 4439484 bytes[0m
+[0;32mI (1428) cam_hal: cam init ok[0m
+[0;32mI (1428) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1438) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1468) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1468) camera: Detected OV2640 camera[0m
+[0;32mI (1468) camera: Detected camera at address=0x30[0m
+[0;32mI (1548) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1548) esp32 ll_cam: node_size: 3072, nodes_per_line: 1, lines_per_node: 4, dma_half_buffer_min:  3072, dma_half_buffer: 12288,lines_per_half_buffer: 16, dma_buffer_size: 24576, image_size: 18432[0m
+[0;32mI (1558) cam_hal: buffer_size: 24576, half_buffer_size: 12288, node_buffer_size: 3072, node_cnt: 8, total_cnt: 1[0m
+[0;32mI (1568) cam_hal: Allocating 9216 Byte frame buffer in PSRAM[0m
+[0;32mI (1568) cam_hal: cam config ok[0m
+[0;32mI (1568) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1658) CAMERA: ✓ Camera initialized successfully![0m
+[0;32mI (1658) SYSTEM: Init LEDs[0m
+[0;32mI (1658) SYSTEM: Init HC-SR04[0m
+[0;32mI (1758) SYSTEM: TFLM OK (arena used=82304 bytes)[0m
+[0;32mI (1758) MEMORY: ===== MEMORY INFORMATION =====[0m
+[0;32mI (1758) MEMORY: DRAM: total=4524375 bytes (4.31 MB), used=237052 bytes (0.23 MB), free=4287323 bytes (4.09 MB)[0m
+[0;32mI (1758) MEMORY: PSRAM: total=4194304 bytes (4.00 MB), used=156180 bytes (0.15 MB), free=4038124 bytes (3.85 MB)[0m
+[0;32mI (1768) MEMORY: Model weight size = 300568 bytes (293.523 KB)[0m
+[0;32mI (1778) MEMORY: Model memory pointer = 0x3f4129b8[0m
+[0;32mI (1778) MEMORY: Model is located in FLASH (expected)[0m
+[0;32mI (1788) MEMORY: Tensor arena pointer = 0x3f803244[0m
+[0;32mI (1788) MEMORY: Tensor arena size = 143360 bytes (140.00 KB)[0m
+[0;32mI (1798) MEMORY: Tensor arena is located in PSRAM ✓[0m
+[0;32mI (1798) MEMORY: ================================[0m
+[0;32mI (1818) SYSTEM: Distance: 240.7 cm[0m
+[0;32mI (1818) SYSTEM: System started (minimal logs).[0m
+[0;32mI (1818) main_task: Returned from app_main()[0m
+[0;32mI (2078) SYSTEM: Distance: 239.9 cm[0m
+[0;32mI (2338) SYSTEM: Distance: 239.9 cm[0m
+[0;32mI (2598) SYSTEM: Distance: 243.2 cm[0m
+[0;32mI (2858) SYSTEM: Distance: 239.9 cm[0m
+[0;32mI (3008) SYSTEM: No person (score=-53)[0m
+[0;32mI (3118) SYSTEM: Distance: 240.7 cm[0m
+[0;32mI (3378) SYSTEM: Distance: 241.1 cm[0m
+[0;32mI (3638) SYSTEM: Distance: 241.2 cm[0m
+[0;32mI (4648) SYSTEM: No person (score=-84)[0m
+[0;32mI (4648) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (4898) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (5158) SYSTEM: Distance: 199.0 cm[0m
+[0;32mI (5408) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6288) SYSTEM: No person (score=-74)[0m
+[0;32mI (6288) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6538) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (6788) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (7038) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (7928) SYSTEM: No person (score=-28)[0m
+[0;32mI (7928) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8178) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8428) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (8678) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9568) SYSTEM: No person (score=-92)[0m
+[0;32mI (9568) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (9818) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10068) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (10318) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11208) SYSTEM: No person (score=-89)[0m
+[0;32mI (11208) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11458) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11708) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (11958) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (12848) SYSTEM: No person (score=-97)[0m
+[0;32mI (12848) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13098) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13348) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (13598) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (14488) SYSTEM: No person (score=-106)[0m
+[0;32mI (14488) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (14738) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (14988) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (15238) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16128) SYSTEM: No person (score=-104)[0m
+[0;32mI (16128) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16378) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16628) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (16878) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (17768) SYSTEM: No person (score=-104)[0m
+[0;32mI (17768) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (18018) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (18268) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (18518) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (18768) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (19018) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (19278) SYSTEM: Distance: 239.7 cm[0m
+[0;32mI (19328) SYSTEM: No person (score=-102)[0m
+[0;32mI (19558) SYSTEM: Distance: ERROR[0m
+[0;32mI (19838) SYSTEM: Distance: ERROR[0m
+[0;32mI (20088) SYSTEM: Distance: 0.2 cm[0m
+[0;32mI (20968) SYSTEM: No person (score=-98)[0m
+[0;32mI (20968) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21218) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21468) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (21718) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (22608) SYSTEM: No person (score=-104)[0m
+[0;32mI (22608) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (22858) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (23108) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (23358) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24248) SYSTEM: No person (score=-74)[0m
+[0;32mI (24248) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24498) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24748) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (24998) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (25888) SYSTEM: No person (score=-84)[0m
+[0;32mI (25888) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26138) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26388) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (26638) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (27528) SYSTEM: No person (score=-100)[0m
+[0;32mI (27558) SYSTEM: Distance: ERROR[0m
+[0;32mI (27838) SYSTEM: Distance: ERROR[0m
+[0;32mI (28118) SYSTEM: Distance: ERROR[0m
+[0;32mI (29168) SYSTEM: No person (score=-103)[0m
+[0;32mI (29168) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29418) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (29668) SYSTEM: Distance: 4.7 cm[0m
+[0;32mI (29918) SYSTEM: Distance: 7.5 cm[0m
+[0;32mI (30808) SYSTEM: No person (score=-108)[0m
+[0;32mI (30828) SYSTEM: Distance: 238.6 cm[0m
+[0;32mI (31088) SYSTEM: Distance: 239.0 cm[0m
+[0;32mI (31348) SYSTEM: Distance: 238.2 cm[0m
+[0;32mI (32448) SYSTEM: No person (score=-99)[0m
+[0;32mI (32448) SYSTEM: Distance: ERROR[0m
+[0;32mI (32708) SYSTEM: Distance: 237.3 cm[0m
+[0;32mI (32968) SYSTEM: Distance: 237.3 cm[0m
+[0;32mI (33228) SYSTEM: Distance: 238.2 cm[0m
+[0;32mI (34088) SYSTEM: No person (score=-77)[0m
+[0;32mI (34088) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34338) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34588) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (34838) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (35728) SYSTEM: No person (score=-102)[0m
+[0;32mI (35728) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (35978) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (36228) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (36478) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (37368) SYSTEM: No person (score=-89)[0m
+[0;32mI (37368) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (37628) SYSTEM: Distance: 239.0 cm[0m
+[0;32mI (37888) SYSTEM: Distance: 241.9 cm[0m
+[0;32mI (38148) SYSTEM: Distance: 239.0 cm[0m
+[0;32mI (39008) SYSTEM: No person (score=-95)[0m
+[0;32mI (39028) SYSTEM: Distance: 237.4 cm[0m
+[0;32mI (39288) SYSTEM: Distance: 238.2 cm[0m
+[0;32mI (39548) SYSTEM: Distance: 240.7 cm[0m
+[0;32mI (39798) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (40648) SYSTEM: No person (score=-96)[0m
+[0;32mI (40668) SYSTEM: Distance: 239.4 cm[0m
+[0;32mI (40918) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41168) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (41418) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42288) SYSTEM: No person (score=-92)[0m
+[0;32mI (42288) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (42548) SYSTEM: Distance: 240.7 cm[0m
+[0;32mI (42798) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (43048) SYSTEM: Distance: 0.6 cm[0m
+[0;32mI (43688) SYSTEM: Distance: 238.6 cm[0m
+[0;32mI (43908) SYSTEM: No person (score=-94)[0m
+[0;32mI (43948) SYSTEM: Distance: 239.0 cm[0m
+[0;32mI (44208) SYSTEM: Distance: 243.2 cm[0m
+[0;32mI (44468) SYSTEM: Distance: 239.4 cm[0m
+[0;32mI (45548) SYSTEM: No person (score=-78)[0m
+[0;32mI (45568) SYSTEM: Distance: 240.7 cm[0m
+[0;32mI (45828) SYSTEM: Distance: 242.3 cm[0m
+[0;32mI (46088) SYSTEM: Distance: 237.8 cm[0m
+[0;32mI (47188) SYSTEM: No person (score=-100)[0m
+[0;32mI (47188) SYSTEM: Distance: 14713.0 cm[0m
+[0;32mI (47448) SYSTEM: Distance: 238.6 cm[0m
+[0;32mI (47708) SYSTEM: Distance: 238.2 cm[0m
+[0;32mI (47968) SYSTEM: Distance: 238.2 cm[0m
+[0;32mI (48828) SYSTEM: No person (score=-94)[0m
+[0;32mI (48848) SYSTEM: Distance: 237.8 cm[0m
+[0;32mI (49108) SYSTEM: Distance: 239.0 cm[0m
+[0;32mI (49368) SYSTEM: Distance: 238.2 cm[0m
+[0;32mI (50468) SYSTEM: No person (score=-102)[0m
+[0;32mI (50468) SYSTEM: Distance: 14714.4 cm[0m
+[0;32mI (50728) SYSTEM: Distance: 240.8 cm[0m
+[0;32mI (50988) SYSTEM: Distance: 244.6 cm[0m
+[0;32mI (51248) SYSTEM: Distance: 242.1 cm[0m
+[0;32mI (52108) SYSTEM: No person (score=-103)[0m
+[0;32mI (52128) SYSTEM: Distance: 248.3 cm[0m
+[0;32mI (52388) SYSTEM: Distance: 241.2 cm[0m
+[0;32mI (52648) SYSTEM: Distance: 242.1 cm[0m
+[0;32mI (53748) SYSTEM: No person (score=-103)[0m
+[0;32mI (53748) SYSTEM: Distance: 14713.8 cm[0m
+[0;32mI (54008) SYSTEM: Distance: 243.7 cm[0m
+[0;32mI (54268) SYSTEM: Distance: 241.2 cm[0m
+[0;32mI (54528) SYSTEM: Distance: 242.1 cm[0m
+[0;32mI (55388) SYSTEM: No person (score=44)[0m
+[0;32mI (55408) SYSTEM: Distance: 241.6 cm[0m
+[0;32mI (55668) SYSTEM: Distance: 240.8 cm[0m
+[0;32mI (55928) SYSTEM: Distance: 241.6 cm[0m
+[0;32mI (57028) SYSTEM: PERSON DETECTED (score=67)[0m
+[0;32mI (57028) SYSTEM: Distance: 14713.7 cm[0m
+[0;32mI (57288) SYSTEM: Distance: 239.4 cm[0m
+[0;32mI (57548) SYSTEM: Distance: 239.9 cm[0m
+[0;32mI (57808) SYSTEM: Distance: 242.4 cm[0m
+[0;32mI (58668) SYSTEM: PERSON DETECTED (score=68)[0m
+[0;32mI (58688) SYSTEM: Distance: 240.3 cm[0m
+[0;32mI (58948) SYSTEM: Distance: 244.6 cm[0m
+[0;32mI (59208) SYSTEM: Distance: 239.9 cm[0m
+[0;32mI (60308) SYSTEM: No person (score=24)[0m
+[0;32mI (60308) SYSTEM: Distance: 14714.3 cm[0m
+[0;32mI (60568) SYSTEM: Distance: 240.7 cm[0m
+[0;32mI (60828) SYSTEM: Distance: 242.4 cm[0m
+[0;32mI (61088) SYSTEM: Distance: 240.3 cm[0m
+[0;32mI (61948) SYSTEM: No person (score=7)[0m
+[0;32mI (61968) SYSTEM: Distance: 240.7 cm[0m
+[0;32mI (62228) SYSTEM: Distance: 242.8 cm[0m
+[0;32mI (62488) SYSTEM: Distance: 242.8 cm[0m
+[0;32mI (63588) SYSTEM: No person (score=37)[0m
+[0;32mI (63588) SYSTEM: Distance: 14714.5 cm[0m
+[0;32mI (63848) SYSTEM: Distance: 242.0 cm[0m
+[0;32mI (64108) SYSTEM: Distance: 239.4 cm[0m
+[0;32mI (64368) SYSTEM: Distance: 242.4 cm[0m
+[0;32mI (65228) SYSTEM: No person (score=35)[0m
+[0;32mI (65248) SYSTEM: Distance: 239.4 cm[0m
+[0;32mI (65508) SYSTEM: Distance: 241.5 cm[0m
+[0;32mI (65768) SYSTEM: Distance: 241.5 cm[0m
+[0;32mI (66868) SYSTEM: No person (score=2)[0m
+[0;32mI (66868) SYSTEM: Distance: 14714.2 cm[0m
+[0;32mI (67128) SYSTEM: Distance: 244.9 cm[0m
+[0;32mI (67388) SYSTEM: Distance: 239.4 cm[0m
+[0;32mI (67648) SYSTEM: Distance: 240.2 cm[0m
+[0;32mI (68508) SYSTEM: No person (score=32)[0m
+[0;32mI (68528) SYSTEM: Distance: 242.4 cm[0m
+[0;32mI (68788) SYSTEM: Distance: 239.9 cm[0m
+[0;32mI (69048) SYSTEM: Distance: 240.3 cm[0m
+[0;32mI (70148) SYSTEM: No person (score=36)[0m
+[0;32mI (70148) SYSTEM: Distance: 14713.2 cm[0m
+[0;32mI (70408) SYSTEM: Distance: 241.6 cm[0m
+[0;32mI (70668) SYSTEM: Distance: 241.2 cm[0m
+[0;32mI (70928) SYSTEM: Distance: 240.8 cm[0m
+[0;32mI (71788) SYSTEM: No person (score=4)[0m
+[0;32mI (71808) SYSTEM: Distance: 247.4 cm[0m
+[0;32mI (72068) SYSTEM: Distance: 241.6 cm[0m
+[0;32mI (72328) SYSTEM: Distance: 240.8 cm[0m
+[0;32mI (73428) SYSTEM: No person (score=-11)[0m
+[0;32mI (73428) SYSTEM: Distance: 14713.5 cm[0m
+[0;32mI (73688) SYSTEM: Distance: 241.6 cm[0m
+[0;32mI (73948) SYSTEM: Distance: 242.1 cm[0m
+[0;32mI (74208) SYSTEM: Distance: 245.4 cm[0m
